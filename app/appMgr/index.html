@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="zh-cn" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="zh-cn" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="zh-cn" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh-cn" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>用户权限配置 - IT运维管理平台</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../resource/css/bootstrap-responsive.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="../../resource/jslib/modernizr-2.6.2.min.js"></script>
+        <script src="../../resource/jslib/respond.min.js"></script>
+    </head>
+    <body>
+	<script type="text/x-handlebars" data-template-name='application'>
+		<div id="header">
+			<div id="site-nav">
+				<div id="site-nav-bd">
+					<ul class="quick-menu">
+						<li class="menu-item">
+							欢迎您，顶级管理员
+						</li>
+						<li class="menu-item">
+							<img src="img/user_info.gif">
+						</li>
+						<li class="menu-item">
+							<a class="menu-no" style="width:48px;" href="/itsm/setting/index.jsp" rel="nofollow">配置</a>
+							<b class="leftline"></b>
+							<b class="rightline"></b>
+						</li>
+						
+						<li class="menu-item">
+							<div class="menu">
+								<a class="menu-hd" style="width:58px;">帮助<b class="bt"></b></a>
+								<div class="menu-bd" style="width:80px;line-height:1.7;" role="menu" aria-hidden="true" id="menu-3">
+									<div>
+										<a href="javascript:void(0);" onclick="window.open('/itsm/help/index.htm')">用户手册</a>
+										<a href="javascript:void(0);" onclick="aboutClickHandler();return false;">关于</a><br>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu-item">
+							<a class="menu-no" style="width:48px;" target="_top" href="/itsm/user/login.jsp?command=relogin" rel="nofollow">退出</a>
+							<b class="leftline"></b>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul id="mainNav">
+				<li>
+					<a href="/itsm/itil/">
+						运维服务
+					</a>
+				</li>
+			</ul>
+			<div id="level-2" style="text-align:center;">
+				<ul style="text-align: center; margin-left: 570px; visibility: visible; ">
+					<li class="current">
+						<a href="/itsm/user/" target="_parent">用户权限配置</a>
+					</li>
+					<li>
+						<a href="#" onclick="backup()">返回<img src="img/Backup.gif" style="vertical-align:middle;"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul class="nav nav-tabs" id="myTab">
+		  <li class="active"><a href="#home">Home</a></li>
+		  <li><a href="#profile">Profile</a></li>
+		  <li><a href="#messages">Messages</a></li>
+		  <li><a href="#settings">Settings</a></li>
+		</ul>
+ 
+		<div class="tab-content">
+		  <div class="tab-pane active" id="home">home</div>
+		  <div class="tab-pane" id="profile">profile</div>
+		  <div class="tab-pane" id="messages">messages</div>
+		  <div class="tab-pane" id="settings">settings</div>
+		</div>
+
+		<div class="btn-group">
+		  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			Action
+			<span class="caret"></span>
+		  </a>
+		  <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+			  <li><a tabindex="-1" href="#">Action</a></li>
+			  <li><a tabindex="-1" href="#">Another action</a></li>
+			  <li><a tabindex="-1" href="#">Something else here</a></li>
+			  <li class="divider"></li>
+			  <li><a tabindex="-1" href="#">Separated link</a></li>
+		  </ul>
+		</div>
+
+		<div class="row">
+			<div class="span3">
+				<ul id="affix" class="nav nav-list" style="width: 258px;">
+				  <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
+				  <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
+				  <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
+				  <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
+				  <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
+				  <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
+				  <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
+				  <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
+				  <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
+				  <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
+				  <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
+				  <li class=""><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
+				  <li class=""><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
+				  <li class="active"><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
+				</ul>
+			</div>
+			<div class="span7" style="height: 2000px;">
+			</div>
+		</div>
+
+		<iframe id="_contentFrame_" frameborder="0" src="" style="width: 100%;"></iframe>
+		</script>
+<style type="text/css">
+	#affix.affix{top: 0px;}
+</style>
+		<!--传统写法-->
+ 		<script src="../../resource/jslib/require.min.js"></script>
+		<script>
+			require.config({
+				baseUrl: "js",
+				paths: {
+					jslib: '../../../resource/jslib'
+				},
+				shim: {
+					'jslib/bootstrap': ['jslib/jquery'],
+					'jslib/ember': ['jslib/jquery', 'jslib/handlebars']
+				}
+			});
+            require(["app"],function(){
+		alert(2)
+				$(function () {
+					var $window = $(window);
+					$('#myTab a').click(function (e) {
+						e.preventDefault();
+						$(this).tab('show');
+					});
+					
+					$('#myTab a').on('show', function (e) {
+						e.target; // activated tab
+						e.relatedTarget; // previous tab
+						console.log('show')
+					});
+					$('#myTab a').on('shown', function (e) {
+						e.target; // activated tab
+						e.relatedTarget; // previous tab
+						console.log('shown')
+					});
+					$('#affix').affix({
+						offset: {
+							top: 167
+						}
+					})
+				})
+			});
+        </script>
+    </body>
+</html>
