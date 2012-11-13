@@ -15,8 +15,8 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../resource/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap-responsive.css">
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -80,65 +80,69 @@
     </div>
 </div>
 <script type="text/x-handlebars" data-template-name='application'>
-    <ul class="nav nav-tabs" id="myTab">
-        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-        <li><a href="#profile" data-toggle="tab">Profile</a></li>
-        <li><a href="#messages" data-toggle="tab">Messages</a></li>
-        <li><a href="#settings" data-toggle="tab">Settings</a></li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane active" id="home">home</div>
-        <div class="tab-pane" id="profile">profile</div>
-        <div class="tab-pane" id="messages">messages</div>
-        <div class="tab-pane" id="settings">settings</div>
-    </div>
-
-    <div class="btn-group">
-        <button class="btn">1</button>
-        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-            Action
-            <span class="caret"></span>
-        </a>
-        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-            <li><a tabindex="-1" href="#">Action</a></li>           
-            <li><a tabindex="-1" href="#">Another action</a></li>
-            <li><a tabindex="-1" href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a tabindex="-1" href="#">Separated link</a></li>
-        </ul>
-    </div>
-
-    <div class="row">
-        <div class="span3">
-            <ul id="affix" class="nav nav-list" style="width: 258px;">
-                <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
-                <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
-                <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
-                <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
-                <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
-                <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
-                <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
-                <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
-                <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
-                <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
-                <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
-                <li class=""><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
-                <li class=""><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
-                <li class="active"><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
-            </ul>
-        </div>
-        <div class="span7" style="height: 2000px;">
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <ul id="affix" class="nav nav-list bj-app-sidenav">
+                    <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
+                    <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
+                    <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
+                    <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
+                    <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
+                    <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
+                    <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
+                    <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
+                    <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
+                    <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
+                    <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
+                    <li class=""><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
+                    <li class=""><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
+                    <li class="active"><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
+                </ul>
+            </div>
+            <div id="ember158" class="ember-view span7" style="height:2000px;">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@TwBootstrap</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
     <iframe id="_contentFrame_" frameborder="0" src="" style="width: 100%;"></iframe>
 </script>
 
-<style type="text/css">
-    #affix.affix {
-        top: 84px;
-    }
-</style>
 <!--传统写法-->
 <script src="../../resource/jslib/require.min.js"></script>
 <script>
@@ -149,7 +153,8 @@
         },
         shim:{
             'jslib/bootstrap':['jslib/jquery'],
-            'jslib/ember':['jslib/jquery', 'jslib/handlebars']
+            'jslib/ember':['jslib/jquery', 'jslib/handlebars'],
+            'jslib/broada/bsview/bsview':['jslib/ember', 'jslib/bootstrap']
         }
     });
     require(["app"]);
