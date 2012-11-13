@@ -15,7 +15,7 @@ define(
                     //Todo: ApplicationView视图DOM插入到文档后执行
                     $('#affix').affix({
                         offset:{
-                            top:108
+                            top:0
                         }
                     });
                 }
