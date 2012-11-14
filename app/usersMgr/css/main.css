@@ -55,6 +55,16 @@
     float: right;
     top: 3px;
 }
+.bj-app-rbg > .bj-btn-success.active{
+    color: #ffffff;
+    background-color: #51a351;
+    text-shadow: none;
+}
+.bj-app-rbg > .bj-btn-warning.active{
+    color: #ffffff;
+    background-color: #f89406;
+    text-shadow: none;
+}
 .bj-app-toolbar,
 .bj-app-table{
     margin-top: 30px;
@@ -62,4 +72,55 @@
 
 .bj-app-table > thead > tr > th{
     background-color: whiteSmoke;
+}
+@media (min-width: 1200px){
+    .bj-app-sidenav {
+        width: 258px;
+    }
+    .bj-app-sidenav input.bj-app-sidenav-search{
+        width: 237px
+    }
+}
+@media (min-width: 980px) {
+    .bj-app-sidenav {
+        top: 0;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .bj-app-sidenav {
+        width: 166px;
+        margin-top: 20px;
+    }
+    .bj-app-sidenav input.bj-app-sidenav-search{
+        width: 145px;
+    }
+}
+@media (max-width: 767px) {
+    .bj-app-sidenav {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .bj-app-sidenav.affix {
+        position: static;
+        width: auto;
+        top: 0;
+    }
+    .bj-app-sidenav input.bj-app-sidenav-search{
+        width: 97%;
+    }
+}
+@media (max-width: 480px) {
+    .bj-app-sidenav input.bj-app-sidenav-search{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
 }

@@ -8,21 +8,10 @@
   <component name="ChangeListManager">
     <list id="7fff0df2-6e4a-4f33-a42c-bd28749b04c3" name="Default" comment="" />
     <list default="true" id="a1042e8b-d8a6-4214-8048-09e29287d8e0" name="broadaJs-1 整合bootstrap" comment="broadaJs-1 整合bootstrap&#10;websotrm生成的配置文件">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/data/grid.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/data/login.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/data/tree.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/js/router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/requirejsBuildConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="DELETED" beforePath="E:\GitHub\broadaJs\.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/css/main.css" afterPath="$PROJECT_DIR$/app/appMgr/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/index.html" afterPath="$PROJECT_DIR$/app/appMgr/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/js/app.js" afterPath="$PROJECT_DIR$/app/appMgr/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/js/router.js" afterPath="$PROJECT_DIR$/app/appMgr/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/css/main.css" afterPath="$PROJECT_DIR$/app/usersMgr/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/index.html" afterPath="$PROJECT_DIR$/app/usersMgr/index.html" />
     </list>
     <ignored path="broadaJs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,28 +31,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="67" selection-start="4578" selection-end="4578" vertical-scroll-proportion="0.40126583">
+            <state line="25" column="22" selection-start="958" selection-end="958" vertical-scroll-proportion="16.96875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/usersMgr/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="10" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+            <state line="117" column="1" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.3657718">
               <folding />
             </state>
           </provider>
@@ -100,6 +80,15 @@
         <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="40" column="39" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="33" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,16 +131,17 @@
         <option value="$PROJECT_DIR$/app/appMgr/index.html" />
         <option value="$PROJECT_DIR$/app/appMgr/css/main.css" />
         <option value="$PROJECT_DIR$/app/usersMgr/js/app.js" />
-        <option value="$PROJECT_DIR$/app/usersMgr/css/main.css" />
+        <option value="$PROJECT_DIR$/resource/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/usersMgr/index.html" />
+        <option value="$PROJECT_DIR$/app/usersMgr/css/main.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1010" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -416,14 +406,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="115" />
     <property name="options.splitter.main.proportions" value="0.2975" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="E:/webstormWorkspace/twitterBootstrap" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="115" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="899" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="893" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="899" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="109" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="109" />
@@ -589,14 +579,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.49414518" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19013524" sideWeight="0.37382075" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19013524" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18969555" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3962264" sideWeight="0.49675325" order="4" side_tool="false" content_ui="tabs" x="24" y="326" width="1232" height="341" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26461038" sideWeight="0.3266979" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5003903" order="8" side_tool="true" content_ui="tabs" />
@@ -605,6 +594,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -696,11 +686,6 @@
         <state line="9" column="20" selection-start="330" selection-end="330" vertical-scroll-proportion="0.33221477" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="3" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/appMgr/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="11" selection-start="860" selection-end="860" vertical-scroll-proportion="0.32846716" />
@@ -748,21 +733,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4420" column="2" selection-start="83482" selection-end="83482" vertical-scroll-proportion="0.0">
+        <state line="5395" column="1" selection-start="103848" selection-end="103849" vertical-scroll-proportion="0.7583187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="869" column="6" selection-start="16796" selection-end="16802" vertical-scroll-proportion="0.7162872">
+          <folding>
+            <element signature="e#948#1223#0" expanded="false" />
+            <element signature="e#1225#1474#0" expanded="false" />
+            <element signature="e#1476#8355#0" expanded="false" />
+            <element signature="e#8357#15090#0" expanded="false" />
+            <element signature="e#15092#16794#0" expanded="false" />
+            <element signature="e#16796#17543#0" expanded="false" />
+            <element signature="e#17545#20873#0" expanded="false" />
+            <element signature="e#20875#20998#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="958" selection-end="958" vertical-scroll-proportion="16.96875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/usersMgr/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="10" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="67" selection-start="4578" selection-end="4578" vertical-scroll-proportion="0.40126583">
+        <state line="117" column="1" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.3657718">
           <folding />
         </state>
       </provider>
