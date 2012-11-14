@@ -7,6 +7,7 @@ define('router', ['jslib/ember'],
 	 * @returns Class
 	 */
 	function() {
+        //todo:配置路由
 		return Ember.Router.extend({
 
 			root: Ember.Route.extend({
@@ -18,73 +19,24 @@ define('router', ['jslib/ember'],
 				index: Ember.Route.extend({
 					route: '/',
 					connectOutlets: function( router ) {
-						/*var controller = router.get( 'applicationController' );
-						var context = controller.namespace.entriesController;
-						context.set( 'filterBy', '' );
-
-						// This require was left here exclusively for design purposes
-						// Loads decoupled controller/view based on current route
-						require([ 'app/controllers/todos', 'app/views/items' ],
-							function( TodosController, ItemsView ) {
-								controller.connectOutlet({
-									viewClass: ItemsView,
-									controller: TodosController.create(),
-									context: context
-								});
-							}
-						);*/
-
 					}
 				}),
 
 				active: Ember.Route.extend({
 					route: '/active',
 					connectOutlets: function( router ) {
-						/*var controller = router.get( 'applicationController' );
-						var context = controller.namespace.entriesController;
-						context.set( 'filterBy', 'active' );
-
-						// This require was left here exclusively for design purposes
-						// Loads decoupled controller/view based on current route
-						require([ 'app/controllers/todos', 'app/views/items' ],
-							function( TodosController, ItemsView ) {
-								controller.connectOutlet({
-									viewClass: ItemsView,
-									controller: TodosController.create(),
-									context: context
-								});
-							}
-						);*/
-
 					}
 				}),
 
 				completed: Ember.Route.extend({
 					route: '/completed',
 					connectOutlets: function( router ) {
-						/*var controller = router.get( 'applicationController' );
-						var context = controller.namespace.entriesController;
-						context.set( 'filterBy', 'completed' );
-
-						// This require was left here exclusively for design purposes
-						// Loads decoupled controller/view based on current route
-						require([ 'app/controllers/todos', 'app/views/items' ],
-							function( TodosController, ItemsView ) {
-								controller.connectOutlet({
-									viewClass: ItemsView,
-									controller: TodosController.create(),
-									context: context
-								});
-							}
-						);*/
-
 					}
 				}),
 
 				specs: Ember.Route.extend({
 					route: '/specs',
 					connectOutlets: function() {
-						//require( [ 'app/specs/helper' ] );
 					}
 				})
 			})

@@ -14,7 +14,7 @@ define(
         "jslib/bootstrap"
     ],
     function () {
-        var exports = Em.bsview = {};
+        var exports = Em.bsview = Em.bsview || {};
         /**
          * button组件
          * @class Ember.bsview.botton

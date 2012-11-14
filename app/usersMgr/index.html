@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="zh-cn" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="zh-cn" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="zh-cn" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="zh-cn" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>用户权限配置 - IT运维管理平台</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../../resource/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap-responsive.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="../../resource/jslib/modernizr-2.6.2.min.js"></script>
+    <script src="../../resource/jslib/respond.min.js"></script>
+</head>
+<body class="userMgr">
+<script type="text/x-handlebars" data-template-name='application'>
+    <div class="container testHeight">
+        <div class="row">
+            <div class="span3">
+                <ul id="affix" class="nav nav-list bj-app-sidenav">
+                    <li><h3>组织结构</h3></li>
+                    <li><input type="text" placeholder="输入拼音首字母搜索"
+                                data-provide="typeahead"
+                               data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]"></li>
+                    <li><a href="#overview"><i class="icon-chevron-right"></i> 科室A</a></li>
+                    <li class="active"><a href="#transitions"><i class="icon-chevron-right"></i> 科室B</a></li>
+                    <li><a href="#modals"><i class="icon-chevron-right"></i> 科室C</a></li>
+                    <li><a href="#dropdowns"><i class="icon-chevron-right"></i> 科室D</a></li>
+                    <li><a href="#scrollspy"><i class="icon-chevron-right"></i> 科室E</a></li>
+                    <li><a href="#tabs"><i class="icon-chevron-right"></i> 科室F</a></li>
+                    <li><a href="#tooltips"><i class="icon-chevron-right"></i> 科室G</a></li>
+                    <li><a href="#popovers"><i class="icon-chevron-right"></i> 科室H</a></li>
+                    <li><a href="#alerts"><i class="icon-chevron-right"></i> 科室I</a></li>
+                    <li><a href="#buttons"><i class="icon-chevron-right"></i> 科室J</a></li>
+                    <li><a href="#collapse"><i class="icon-chevron-right"></i> 科室K</a></li>
+                </ul>
+            </div>
+            <div class="span8">
+                <div class="btn-toolbar bj-app-toolbar">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" data-toggle="dropdown">
+                            新建
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">新建用户</a></li>
+                            <li><a href="#">新建组织</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">展示菜单</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn">编辑</button>
+                    <button class="btn">删除</button>
+                    <button class="btn">分配角色</button>
+                    <div class="btn-group bj-app-rbg">
+                        <button class="btn btn-success btn-mini">正常</button>
+                        <button class="btn btn-warning btn-mini">过期</button>
+                    </div>
+                </div>
+                <table class="table table-bordered table-hover bj-app-table">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>用户名</th>
+                        <th>登录帐号</th>
+                        <th>联系电话</th>
+                        <th>移动电话</th>
+                        <th>电子邮件</th>
+                        <th>业务单位</th>
+                        <th>部门</th>
+                        <th>职位</th>
+                        <th>状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>顶级管理员</td>
+                        <td>admin</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td>默认机构</td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>顶级审计员</td>
+                        <td>auditor</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>顶级安全员</td>
+                        <td>secman</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>服务申请人</td>
+                        <td>server1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td>服务目录组</td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>作业计划员</td>
+                        <td>task1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td>作业处理组</td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-warning">过期</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-warning">过期</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-warning">过期</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>demo</td>
+                        <td>demo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>顶级业务单位</td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="label label-success">正常</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--传统写法-->
+<script src="../../resource/jslib/require.min.js"></script>
+<script>
+    require.config({
+        baseUrl:"js",
+        paths:{
+            jslib:'../../../resource/jslib'
+        },
+        shim:{
+            'jslib/bootstrap':['jslib/jquery'],
+            'jslib/ember':['jslib/jquery', 'jslib/handlebars'],
+            'jslib/broada/bsview/bsview':['jslib/ember', 'jslib/bootstrap']
+        }
+    });
+    require(["app"]);
+</script>
+</body>
+</html>
