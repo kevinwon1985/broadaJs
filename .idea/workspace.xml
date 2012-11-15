@@ -8,8 +8,11 @@
   <component name="ChangeListManager">
     <list id="7fff0df2-6e4a-4f33-a42c-bd28749b04c3" name="Default" comment="" />
     <list default="true" id="a1042e8b-d8a6-4214-8048-09e29287d8e0" name="broadaJs-1 整合bootstrap" comment="broadaJs-1 整合bootstrap&#10;websotrm生成的配置文件">
-      <change type="DELETED" beforePath="E:\GitHub\broadaJs\.gitignore" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/less/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/css/main.css" afterPath="$PROJECT_DIR$/app/appMgr/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/index.html" afterPath="$PROJECT_DIR$/app/appMgr/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appMgr/js/app.js" afterPath="$PROJECT_DIR$/app/appMgr/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/css/main.css" afterPath="$PROJECT_DIR$/app/usersMgr/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/index.html" afterPath="$PROJECT_DIR$/app/usersMgr/index.html" />
     </list>
@@ -34,52 +37,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="958" selection-end="958" vertical-scroll-proportion="16.96875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/usersMgr/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="1" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.3657718">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/appMgr/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="52" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/appMgr/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="16" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/appMgr/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bsview.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="39" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+            <state line="48" column="84" selection-start="3276" selection-end="3276" vertical-scroll-proportion="-3.59375">
               <folding />
             </state>
           </provider>
@@ -88,7 +46,34 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+            <state line="15" column="29" selection-start="367" selection-end="372" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="954" column="12" selection-start="13248" selection-end="13248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/usersMgr/less/main.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="16" selection-start="92" selection-end="92" vertical-scroll-proportion="0.229927">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/usersMgr/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="1" selection-start="861" selection-end="862" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,21 +112,22 @@
         <option value="$PROJECT_DIR$/resource/jslib/ember.js" />
         <option value="$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js" />
         <option value="$PROJECT_DIR$/app/appMgr/js/router.js" />
-        <option value="$PROJECT_DIR$/app/appMgr/js/app.js" />
-        <option value="$PROJECT_DIR$/app/appMgr/index.html" />
-        <option value="$PROJECT_DIR$/app/appMgr/css/main.css" />
-        <option value="$PROJECT_DIR$/app/usersMgr/js/app.js" />
         <option value="$PROJECT_DIR$/resource/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/usersMgr/index.html" />
+        <option value="$PROJECT_DIR$/app/appMgr/css/main.css" />
+        <option value="$PROJECT_DIR$/app/appMgr/index.html" />
+        <option value="$PROJECT_DIR$/app/appMgr/js/app.js" />
+        <option value="$PROJECT_DIR$/app/usersMgr/js/app.js" />
         <option value="$PROJECT_DIR$/app/usersMgr/css/main.css" />
+        <option value="$PROJECT_DIR$/app/usersMgr/index.html" />
+        <option value="$PROJECT_DIR$/app/usersMgr/less/main.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1296" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -309,6 +295,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="usersMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usersMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,13 +587,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.49414518" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19013524" sideWeight="0.37382075" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18969555" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1893397" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3962264" sideWeight="0.49675325" order="4" side_tool="false" content_ui="tabs" x="24" y="326" width="1232" height="341" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26461038" sideWeight="0.3266979" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5003903" order="8" side_tool="true" content_ui="tabs" />
@@ -595,7 +603,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS Styles" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278302" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -661,16 +669,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/jslib/ember.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1792" column="53" selection-start="46413" selection-end="46413" vertical-scroll-proportion="0.4276885" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="13" selection-start="8798" selection-end="8798" vertical-scroll-proportion="0.6328801" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/jslib/ember.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="173" selection-start="571" selection-end="33348" vertical-scroll-proportion="0.23362176" />
@@ -696,48 +694,6 @@
         <state line="1951" column="6" selection-start="54039" selection-end="54039" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/appMgr/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/appMgr/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/appMgr/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="39" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5395" column="1" selection-start="103848" selection-end="103849" vertical-scroll-proportion="0.7583187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/css/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="869" column="6" selection-start="16796" selection-end="16802" vertical-scroll-proportion="0.7162872">
@@ -754,16 +710,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/appMgr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="39" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.23924051">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/appMgr/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="11" selection-start="2511" selection-end="2512" vertical-scroll-proportion="0.32846716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="27" selection-start="1759" selection-end="1759" vertical-scroll-proportion="0.1459854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/appMgr/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="40" selection-start="643" selection-end="643" vertical-scroll-proportion="0.50729924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webide.jar!/resources/html5-schema/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="642" column="25" selection-start="14588" selection-end="14593" vertical-scroll-proportion="0.6946472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="367" selection-end="372" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="958" selection-end="958" vertical-scroll-proportion="16.96875">
+        <state line="48" column="84" selection-start="3276" selection-end="3276" vertical-scroll-proportion="-3.59375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="954" column="12" selection-start="13248" selection-end="13248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/usersMgr/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="1" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.3657718">
+        <state line="39" column="1" selection-start="861" selection-end="862" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/usersMgr/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="92" selection-end="92" vertical-scroll-proportion="0.229927">
           <folding />
         </state>
       </provider>

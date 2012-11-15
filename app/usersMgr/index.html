@@ -28,71 +28,87 @@
     <div class="container testHeight">
         <div class="row">
             <div class="span3">
-                <ul id="affix" class="nav nav-list bj-app-sidenav">
-                    <li><h3>组织结构</h3></li>
-                    <li><input type="text" class="bj-app-sidenav-search" placeholder="输入拼音首字母搜索"
+                <div id="affix" class="bj-app-sidenav">
+                    <form>
+                        <legend>组织结构</legend>
+                        <input type="text" class="bj-app-sidenav-search" placeholder="输入拼音首字母搜索"
                                data-provide="typeahead"
-                               data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]"></li>
-                    <li><a href="#overview" data-toggle="collapse" data-target="#demo"><i class="icon-chevron-right"></i> 科室A</a></li>
-                    <li id="demo" class="collapse">
-                        <ul class="nav nav-stacked">
-                            <li><a href="#"> 子科室a</a></li>
-                            <li><a href="#"> 子科室b</a></li>
-                            <li><a href="#"> 子科室c</a></li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="#transitions"><i class="icon-chevron-right"></i> 科室B</a></li>
-                    <li><a href="#modals"><i class="icon-chevron-right"></i> 科室C</a></li>
-                    <li><a href="#dropdowns"><i class="icon-chevron-right"></i> 科室D</a></li>
-                    <li><a href="#scrollspy"><i class="icon-chevron-right"></i> 科室E</a></li>
-                    <li><a href="#tabs"><i class="icon-chevron-right"></i> 科室F</a></li>
-                    <li><a href="#tooltips"><i class="icon-chevron-right"></i> 科室G</a></li>
-                    <li><a href="#popovers"><i class="icon-chevron-right"></i> 科室H</a></li>
-                    <li><a href="#alerts"><i class="icon-chevron-right"></i> 科室I</a></li>
-                    <li><a href="#buttons"><i class="icon-chevron-right"></i> 科室J</a></li>
-                    <li><a href="#collapse"><i class="icon-chevron-right"></i> 科室K</a></li>
-                </ul>
+                               data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]">
+                    </form>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active">
+                            <a href="#" data-toggle="collapse" data-target="#subNav1">
+                                <i class="icon-chevron-right"></i> 科室A</a>
+                            <ul id="subNav1" class="nav nav-stacked collapse in bj-subnav">
+                                <li><a href="#"> 子科室a</a></li>
+                                <li><a href="#"> 子科室b</a></li>
+                                <li><a href="#"> 子科室c</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#subNav2">
+                                <i class="icon-chevron-right"></i> 科室B</a>
+                            <ul id="subNav2" class="nav nav-stacked collapse bj-subnav">
+                                <li><a href="#"> 子科室a</a></li>
+                                <li><a href="#"> 子科室b</a></li>
+                                <li><a href="#"> 子科室c</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室C</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室D</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室E</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室F</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室G</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室H</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室I</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室J</a></li>
+                        <li><a href="#"><i class="icon-chevron-right"></i> 科室K</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="span8">
                 <div class="btn-toolbar bj-app-toolbar">
-                    <div class="btn-group">
-                        <button class="btn">
-                            <i class="icon-plus"></i>
-                            新建
-                        </button>
-                        <button class="btn dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-user"></i> 新建用户</a></li>
-                            <li><a href="#"><i class="icon-th-list"></i> 新建组织</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">展示菜单</a></li>
-                        </ul>
-                    </div>
-                    <button class="btn">编辑</button>
-                    <button class="btn">删除</button>
-                    <button class="btn">分配角色</button>
-                    <div class="btn-group bj-app-rbg" data-toggle="buttons-radio">
-                        <button class="btn bj-btn-success btn-mini">正常</button>
-                        <button class="btn bj-btn-warning btn-mini">过期</button>
-                    </div>
-                    <div class="input-prepend input-append bj-app-rbg">
+                    <div class="navbar-inner">
                         <div class="btn-group">
+                            <button class="btn">
+                                <i class="icon-plus"></i>
+                                新建
+                            </button>
                             <button class="btn dropdown-toggle" data-toggle="dropdown">
-                                全匹配
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="#"> 用户名</a></li>
-                                <li><a href="#"> 联系电话</a></li>
-                                <li><a href="#"> 业务单位</a></li>
+                                <li><a href="#"><i class="icon-user"></i> 新建用户</a></li>
+                                <li><a href="#"><i class="icon-th-list"></i> 新建组织</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">展示菜单</a></li>
                             </ul>
                         </div>
-                        <input class="span2" type="text">
-                        <button class="btn" type="button">
-                            <i class="icon-search"></i>
-                        </button>
+                        <button class="btn">编辑</button>
+                        <button class="btn">删除</button>
+                        <button class="btn">分配角色</button>
+                        <div class="btn-group pull-right bj-mt3" data-toggle="buttons-radio">
+                            <button class="btn bj-btn-success btn-mini">正常</button>
+                            <button class="btn bj-btn-warning btn-mini">过期</button>
+                        </div>
+                        <div class="input-prepend input-append pull-right">
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                    查找条件
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"> 全匹配</a></li>
+                                    <li><a href="#"> 用户名</a></li>
+                                    <li><a href="#"> 联系电话</a></li>
+                                    <li><a href="#"> 业务单位</a></li>
+                                </ul>
+                            </div>
+                            <input class="span2" type="text" size="16">
+                            <button class="btn" type="button">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <table class="table table-bordered table-hover bj-app-table">

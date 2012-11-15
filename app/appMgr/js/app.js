@@ -4,7 +4,7 @@ define(
 		'jslib/jquery'
 	],
 	function(Router) {
-        var $document = $(document),
+        var $window = $(window),
             $contentFrame = $('#_contentFrame_'),
             headerHeight = $('#header').height();
 
@@ -20,7 +20,13 @@ define(
             }
         };
 
-        app.adjustContentFrameHeight( $document.height()-headerHeight-5 );
+        app.ready = function(){
+            app.adjustContentFrameHeight( $window.height()-headerHeight-5 );
+            $(window).resize(function(){
+                app.adjustContentFrameHeight( $window.height()-headerHeight-5 );
+            });
+        };
+
 
         if(window){
             window.appMgr = app;

@@ -12,14 +12,11 @@
     border-radius: 6px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
 }
-.bj-app-sidenav > li{
+.bj-app-sidenav > ul.nav > li{
     border: 1px solid #E5E5E5;
     margin: 0 0 -1px;
 }
-.bj-app-sidenav > li.active{
-    border-color: #0088cc;
-}
-.bj-app-sidenav > li.active > a {
+.bj-app-sidenav > ul.nav > li.active > a {
     position: relative;
     z-index: 2;
     padding: 9px 15px;
@@ -27,40 +24,32 @@
     text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
     box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
 }
-.bj-app-sidenav > li > a,
-.bj-app-sidenav > li > h3{
+.bj-app-sidenav > ul.nav > li > a{
     margin: 0;
     padding: 8px 14px;
 }
-.bj-app-sidenav > li > h3{
-    border-radius: 6px 6px 0 0;
-    font-size: 24px;
-    background-color: whiteSmoke;
-    color: #005580;
-}
-.bj-app-sidenav > li > a:hover {
-    background-color: whiteSmoke;
-}
-.bj-app-sidenav > li:first-child{
+.bj-app-sidenav > ul.nav > li:first-child{
     border-radius: 6px 6px 0 0;
 }
-.bj-app-sidenav > li:nth-child(2){
-    background-color: whiteSmoke;
-    padding: 8px 0 0 3px;
-}
-.bj-app-sidenav > li:last-child{
+.bj-app-sidenav > ul.nav > li:last-child{
     border-radius: 0 0 6px 6px;
 }
-.bj-app-rbg{
-    float: right;
+.bj-subnav{
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+.bj-app-toolbar > .navbar-inner > *{
+    margin-top: 4px;
+}
+.bj-mt3{
     top: 3px;
 }
-.bj-app-rbg > .bj-btn-success.active{
+.bj-mt3 > .bj-btn-success.active{
     color: #ffffff;
     background-color: #51a351;
     text-shadow: none;
 }
-.bj-app-rbg > .bj-btn-warning.active{
+.bj-mt3 > .bj-btn-warning.active{
     color: #ffffff;
     background-color: #f89406;
     text-shadow: none;
@@ -77,7 +66,7 @@
     .bj-app-sidenav {
         width: 258px;
     }
-    .bj-app-sidenav input.bj-app-sidenav-search{
+    input.bj-app-sidenav-search{
         width: 237px
     }
 }
@@ -93,7 +82,7 @@
         width: 166px;
         margin-top: 20px;
     }
-    .bj-app-sidenav input.bj-app-sidenav-search{
+    input.bj-app-sidenav-search{
         width: 145px;
     }
 }
@@ -107,12 +96,12 @@
         width: auto;
         top: 0;
     }
-    .bj-app-sidenav input.bj-app-sidenav-search{
+    input.bj-app-sidenav-search{
         width: 97%;
     }
 }
 @media (max-width: 480px) {
-    .bj-app-sidenav input.bj-app-sidenav-search{
+    input.bj-app-sidenav-search{
         width: 95%;
     }
 }
