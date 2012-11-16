@@ -13,7 +13,7 @@ define(
                 templateName : 'application',
                 didInsertElement: function(){
 
-                    $('#affix').affix({
+                    $('#sidenav').affix({
                         offset:{
                             top:0
                         }

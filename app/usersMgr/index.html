@@ -18,20 +18,21 @@
     <link rel="stylesheet" href="../../resource/css/bootstrap.css">
     <link rel="stylesheet" href="../../resource/css/bootstrap-responsive.css">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet/less" href="less/main.less">
+    <!--<link rel="stylesheet" href="css/main.css">-->
 
     <script src="../../resource/jslib/modernizr-2.6.2.min.js"></script>
     <script src="../../resource/jslib/respond.min.js"></script>
 </head>
 <body class="userMgr">
 <script type="text/x-handlebars" data-template-name='application'>
-    <div class="container testHeight">
-        <div class="row">
+    <div class="container-fluid testHeight">
+        <div class="row-fluid">
             <div class="span3">
-                <div id="affix" class="bj-app-sidenav">
+                <div id="sidenav" class="bj-app-sidenav">
                     <form>
                         <legend>组织结构</legend>
-                        <input type="text" class="bj-app-sidenav-search" placeholder="输入拼音首字母搜索"
+                        <input id="sidenav-search" type="text" placeholder="输入拼音首字母搜索"
                                data-provide="typeahead"
                                data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]">
                     </form>
@@ -66,7 +67,55 @@
                     </ul>
                 </div>
             </div>
-            <div class="span8">
+            <div id="appContent" class="span9">
+                <div class="btn-toolbar bj-app-searchbar">
+                    <div class="navbar-inner">
+                        <div class="btn-group pull-right bj-btngUserStatus" data-toggle="buttons-radio">
+                            <button class="btn bj-btn-success btn-mini">正常</button>
+                            <button class="btn bj-btn-warning btn-mini">过期</button>
+                        </div>
+                        <div id="form_search" class="input-prepend input-append">
+                            <input class="span3" type="text" size="16">
+                            <button class="btn" type="button">
+                                <i class="icon-search"></i>
+                            </button>
+                            <button class="btn" type="button"
+                                    data-toggle="collapse" data-target="#form_moreOptSearch">
+                                更多查询条件</button>
+                        </div>
+                        <form id="form_moreOptSearch" class="row-fluid collapse">
+                            <div class="row-fluid">
+                                <label class="span2">登录帐号</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                                <label class="span2">电子邮箱</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                            </div>
+                            <div class="row-fluid">
+                                <label class="span2">用户名</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                                <label class="span2">联系电话</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                            </div>
+                            <div class="row-fluid">
+                                <label class="span2">职位</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                                <label class="span2">部门</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                            </div>
+                            <div class="row-fluid">
+                                <label class="span2">状态</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                                <label class="span2">移动电话</label>
+                                <div class="span4"><input type="text" size="16"></div>
+                            </div>
+                            <div class="row-fluid">
+                                <button class="btn btn-primary">查询</button>
+                                <a class="btn" data-toggle="collapse"
+                                   data-target="#form_moreOptSearch">取消</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <div class="btn-toolbar bj-app-toolbar">
                     <div class="navbar-inner">
                         <div class="btn-group">
@@ -87,30 +136,9 @@
                         <button class="btn">编辑</button>
                         <button class="btn">删除</button>
                         <button class="btn">分配角色</button>
-                        <div class="btn-group pull-right bj-mt3" data-toggle="buttons-radio">
-                            <button class="btn bj-btn-success btn-mini">正常</button>
-                            <button class="btn bj-btn-warning btn-mini">过期</button>
-                        </div>
-                        <div class="input-prepend input-append pull-right">
-                            <div class="btn-group">
-                                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                                    查找条件
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"> 全匹配</a></li>
-                                    <li><a href="#"> 用户名</a></li>
-                                    <li><a href="#"> 联系电话</a></li>
-                                    <li><a href="#"> 业务单位</a></li>
-                                </ul>
-                            </div>
-                            <input class="span2" type="text" size="16">
-                            <button class="btn" type="button">
-                                <i class="icon-search"></i>
-                            </button>
-                        </div>
                     </div>
                 </div>
+
                 <table class="table table-bordered table-hover bj-app-table">
                     <thead>
                     <tr>
@@ -290,7 +318,6 @@
     </div>
 </script>
 
-<!--传统写法-->
 <script src="../../resource/jslib/require.min.js"></script>
 <script>
     require.config({
@@ -304,7 +331,7 @@
             'jslib/broada/bsview/bsview':['jslib/ember', 'jslib/bootstrap']
         }
     });
-    require(["app"]);
+    require(["jslib/less","app"]);
 </script>
 </body>
 </html>
