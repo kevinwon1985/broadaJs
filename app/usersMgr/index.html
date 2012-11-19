@@ -39,20 +39,27 @@
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active">
                             <a href="#" data-toggle="collapse" data-target="#subNav1">
-                                <i class="icon-chevron-right"></i> 科室A</a>
-                            <ul id="subNav1" class="nav nav-stacked collapse in bj-subnav">
-                                <li><a href="#"> 子科室a</a></li>
-                                <li><a href="#"> 子科室b</a></li>
-                                <li><a href="#"> 子科室c</a></li>
+                                <i class="icon-chevron-down"></i> 科室A</a>
+                            <ul id="subNav1" class="nav nav-pills nav-stacked collapse in bj-subnav">
+                                <li class="active">
+                                    <a href="#" data-toggle="collapse" data-target="#subsubNav1"><i class="icon-chevron-down"></i> 子科室a</a>
+                                    <ul id="subsubNav1" class="nav nav-pills nav-stacked collapse in bj-subnav">
+                                        <li class="active"><a href="#"><i class="icon-minus"></i> 子子科室a</a></li>
+                                        <li><a href="#"><i class="icon-chevron-right"></i> 子子科室b</a></li>
+                                        <li><a href="#"><i class="icon-minus"></i> 子y子科室c</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-minus"></i> 子科室b</a></li>
+                                <li><a href="#"><i class="icon-minus"></i> 子科室c</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#subNav2">
                                 <i class="icon-chevron-right"></i> 科室B</a>
-                            <ul id="subNav2" class="nav nav-stacked collapse bj-subnav">
-                                <li><a href="#"> 子科室a</a></li>
-                                <li><a href="#"> 子科室b</a></li>
-                                <li><a href="#"> 子科室c</a></li>
+                            <ul id="subNav2" class="nav nav-pills nav-stacked collapse bj-subnav">
+                                <li><a href="#"><i class="icon-minus"></i> 子科室a</a></li>
+                                <li class="active"><a href="#"><i class="icon-minus"></i> 子科室b</a></li>
+                                <li><a href="#"><i class="icon-minus"></i> 子科室c</a></li>
                             </ul>
                         </li>
                         <li><a href="#"><i class="icon-chevron-right"></i> 科室C</a></li>
@@ -75,7 +82,7 @@
                             <button class="btn bj-btn-warning btn-mini">过期</button>
                         </div>
                         <div id="form_search" class="input-prepend input-append">
-                            <input class="span3" type="text" size="16">
+                            <input class="span3" type="text" size="16" placeholder="用户名、登录帐号">
                             <button class="btn" type="button">
                                 <i class="icon-search"></i>
                             </button>

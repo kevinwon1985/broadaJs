@@ -1,10 +1,13 @@
 //todo:改成less
-//bootstrap中定义的变量
+//bootstrap中定义的变量,暂时拷贝过来，以后要跟bootstrap中保持一致
 @btnSuccessBackgroundHighlight: #51a351;
 @btnWarningBackgroundHighlight: #f89406;
+@linkColor: #08c;
+@white: #fff;
 
 //自定义的变量
 @contentMt: 30px;
+@subNavPl: 20px;
 
 .testHeight {
     height: 2000px;
@@ -43,25 +46,37 @@
                 border: 0;
                 text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
                 box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
-
-                .icon-chevron-right {
-                    opacity: 1;
-                }
             }
             > a{
                 margin: 0;
                 padding: 8px 14px;
-
-                .icon-chevron-right {
-                    opacity: .25;
-                }
             }
         }
     }
 
     .bj-subnav {
         margin-bottom: 0;
-        margin-left: 30px;
+        margin-left: @subNavPl;
+        > li {
+            &.active > a{
+                color: @white;
+                background-color: lighten(@linkColor, 10%);
+            }
+            > a {
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    li.active > a{
+        [class^="icon-"]{
+            opacity: 1;
+        }
+    }
+    a{
+        [class^="icon-"]{
+            opacity: .25;
+        }
     }
 }
 
@@ -167,12 +182,55 @@
         width: 97%;
         margin-left: 0;
     }
+
+    .bj-app-table {
+        tr > th {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6){
+                display: none;
+            }
+        }
+        tr > td{
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6){
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
     #sidenav-search {
         width: 95%;
         margin-left: 0;
+    }
+    .bj-btngUserStatus {
+        float: none;
+        top: 0;
+    }
+    .bj-app-table {
+        tr > th {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9){
+                display: none;
+            }
+        }
+        tr > td{
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9){
+                display: none;
+            }
+        }
     }
 }
 
