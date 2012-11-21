@@ -1,0 +1,24 @@
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        {{#if view.isMultiMode}}
+        <th><input type="checkbox"></th>
+        {{/if}}
+        {{#each view.heads}}
+        <th>{{title}}</th>
+        {{/each}}
+    </tr>
+    </thead>
+    <tbody>
+    {{#each record in view.content}}
+    <tr>
+        {{#if view.isMultiMode}}
+        <th><input type="checkbox"></th>
+        {{/if}}
+        {{#each view.heads}}
+        <td>{{record}}</td>
+        {{/each}}
+    </tr>
+    {{/each}}
+    </tbody>
+</table>

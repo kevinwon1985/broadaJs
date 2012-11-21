@@ -1,7 +1,7 @@
 ({
     appDir: "./",
     baseUrl: "js",
-    dir: "../appMgr-build",
+    dir: "../usersMgr-build",
 	paths: {
 		jslib: '../../../resource/jslib'
 	},
