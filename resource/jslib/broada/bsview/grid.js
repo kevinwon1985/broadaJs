@@ -14,31 +14,37 @@ define(function (require, exports, module) {
     var tpl = require('jslib/text!./templates/grid.html');
 
     /**
-     * grid header类，私有的，用于辅助生成grid
-     * @class gridHeader
-     * @private
-     * @param {object} opt 配置对象
+     * 用于在模板的嵌套each中，把一个each中的属性值当另外一个each的属性名来获取值。
+     * 例如：
+     * {{#each record in view.content}}
+     *      {{#each col in view.heads}}
+     *          {{getValueInNestEach record col.mapping}}
+     *      {{/each}}
+     * {{/each}}
+     * 跟下面js语句原理类似
+     * for( a in obj1 ){
+     *     for( b in obj2 ){
+     *         var v = obj1[b]
+     *     }
+     * }
+     * 将返回v的值
+     * @method getValueInNestEach
+     * @for Ember.Handlebars.helpers
+     * @param rootpath {String}
+     * @param path {String}
      */
-    var gridHeader = Em.CollectionView.extend({
-        tagName: "thead",
-        itemViewClass: gridHeaderTh
+    var normalizePath = Ember.Handlebars.normalizePath,
+        HandlebarsGet = Ember.Handlebars.get;
+    Ember.Handlebars.registerHelper('getValueInNestEach', function(rootpath, path, options) {
+        Ember.assert("参数错误，调用格式：{{getValueInNestEach targetObject col.mapping}}",
+            arguments.length == 3);
+
+        var path = HandlebarsGet(path, path, options),
+            root = HandlebarsGet(rootpath, rootpath, options);
+
+        return root[path];
     });
 
-    /**
-     * grid header的列，私有，用于辅助生成gridheader
-     * @class gridHeaderTh
-     * @private
-     * @param {object} opt 配置对象
-     */
-    var gridHeaderTh = Em.CollectionView.extend({
-        template: Ember.Handlebars.compile(
-            '{{#if view.isCheckbox}}'+
-                '<input type="checkbox">'+
-            '{{else}}'+
-                '<th>{{view.title}}</th>'+
-            '{{/if}}'
-        )
-    });
     /**
      * grid组件
      * @class Ember.bsview.grid

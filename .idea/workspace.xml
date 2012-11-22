@@ -7,21 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list id="7fff0df2-6e4a-4f33-a42c-bd28749b04c3" name="Default" comment="" />
-    <list default="true" id="a1042e8b-d8a6-4214-8048-09e29287d8e0" name="broadaJs-1 整合bootstrap" comment="broadaJs-1 整合bootstrap&#10;完成静态界面demo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/js/controller/appController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/js/model/userModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/usersMgr/js/store/userStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\yuicompressor-2.4.7.jar" afterPath="" />
+    <list default="true" id="a1042e8b-d8a6-4214-8048-09e29287d8e0" name="broadaJs-1 整合bootstrap" comment="broadaJs-1 整合bootstrap&#10;封装grid视图组件">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/ember.rest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/ember.rest.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/css/main.css" afterPath="$PROJECT_DIR$/app/usersMgr/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/data/grid.json" afterPath="$PROJECT_DIR$/app/usersMgr/data/grid.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/index.html" afterPath="$PROJECT_DIR$/app/usersMgr/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/js/app.js" afterPath="$PROJECT_DIR$/app/usersMgr/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/js/router.js" afterPath="$PROJECT_DIR$/app/usersMgr/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usersMgr/requirejsBuildConfig.js" afterPath="$PROJECT_DIR$/app/usersMgr/requirejsBuildConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html" />
     </list>
     <ignored path="broadaJs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,20 +36,17 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="30" selection-start="10125" selection-end="10143" vertical-scroll-proportion="-11.8125">
+            <state line="164" column="30" selection-start="10125" selection-end="10143" vertical-scroll-proportion="-8.15625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="309" column="28" selection-start="11956" selection-end="11956" vertical-scroll-proportion="0.66292137">
-              <folding>
-                <element signature="e#774#1930#0" expanded="false" />
-                <element signature="e#1957#11912#0" expanded="false" />
-              </folding>
+            <state line="31" column="43" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,7 +81,7 @@
       <file leaf-file-name="grid.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="461" selection-end="461" vertical-scroll-proportion="-15.1875">
+            <state line="9" column="9" selection-start="243" selection-end="243" vertical-scroll-proportion="-7.59375">
               <folding />
             </state>
           </provider>
@@ -101,16 +90,7 @@
       <file leaf-file-name="handlebars.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resource/jslib/handlebars.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="25" selection-start="1481" selection-end="1506" vertical-scroll-proportion="-7.08">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ember.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/jslib/ember.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21508" column="0" selection-start="608972" selection-end="608972" vertical-scroll-proportion="0.0">
+            <state line="64" column="25" selection-start="1481" selection-end="1506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,10 +105,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grid.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="grid.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="19" selection-start="1204" selection-end="1215" vertical-scroll-proportion="0.0">
+            <state line="46" column="0" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.46067417">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ember.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/jslib/ember.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19753" column="18" selection-start="557704" selection-end="557704" vertical-scroll-proportion="35.84">
               <folding />
             </state>
           </provider>
@@ -174,9 +163,9 @@
         <option value="$PROJECT_DIR$/app/usersMgr/js/controller/appController.js" />
         <option value="$PROJECT_DIR$/app/usersMgr/index.html" />
         <option value="$PROJECT_DIR$/app/usersMgr/js/store/userStore.js" />
-        <option value="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" />
-        <option value="$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html" />
         <option value="$PROJECT_DIR$/app/usersMgr/js/app.js" />
+        <option value="$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html" />
+        <option value="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" />
       </list>
     </option>
   </component>
@@ -545,14 +534,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="115" />
     <property name="options.splitter.main.proportions" value="0.2975" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="G:/SVN/weblib/trunk/module/框架库以及研究代码/knockout" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="115" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="899" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="893" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="899" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="109" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="109" />
@@ -683,7 +672,11 @@
       <created>1353311010592</created>
       <updated>1353311010592</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="broadaJs-1 整合bootstrap&#10;封装grid视图组件">
+      <created>1353498902600</created>
+      <updated>1353498902600</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers>
       <JIRA shared="false" url="http://rdcserver/jira">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -733,7 +726,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.49414518" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19013524" sideWeight="0.37382075" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19013524" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19013524" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3962264" sideWeight="0.49675325" order="4" side_tool="false" content_ui="tabs" x="24" y="326" width="1232" height="341" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26461038" sideWeight="0.3266979" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5003903" order="8" side_tool="true" content_ui="tabs" />
@@ -787,7 +780,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="broadaJs-1 整合bootstrap&#10;完成静态界面demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="broadaJs-1 整合bootstrap&#10;封装grid视图组件" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -804,6 +797,7 @@
     <MESSAGE value="broadaJs-1 整合bootstrap&#10;websotrm生成的配置文件" />
     <MESSAGE value="broadaJs-1 整合bootstrap&#10;树的样式" />
     <MESSAGE value="broadaJs-1 整合bootstrap&#10;完成静态界面demo" />
+    <MESSAGE value="broadaJs-1 整合bootstrap&#10;封装grid视图组件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,21 +839,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/bsview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="32" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/usersMgr/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="71" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="19" selection-start="1204" selection-end="1215" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -878,16 +863,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
+    <entry file="file://$PROJECT_DIR$/app/usersMgr/js/store/userStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="30" selection-start="10125" selection-end="10143" vertical-scroll-proportion="-11.8125">
+        <state line="13" column="55" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/usersMgr/js/store/userStore.js">
+    <entry file="file://$PROJECT_DIR$/app/usersMgr/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+        <state line="164" column="30" selection-start="10125" selection-end="10143" vertical-scroll-proportion="-8.15625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/jslib/handlebars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="25" selection-start="1481" selection-end="1506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/jslib/ember.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19753" column="18" selection-start="557704" selection-end="557704" vertical-scroll-proportion="35.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="43" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="9" selection-start="243" selection-end="243" vertical-scroll-proportion="-7.59375">
           <folding />
         </state>
       </provider>
@@ -899,34 +912,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/jslib/handlebars.js">
+    <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="25" selection-start="1481" selection-end="1506" vertical-scroll-proportion="-7.08">
+        <state line="46" column="0" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.46067417">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/jslib/ember.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21508" column="0" selection-start="608972" selection-end="608972" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/jslib/broada/bsview/templates/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="461" selection-end="461" vertical-scroll-proportion="-15.1875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/usersMgr/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="309" column="28" selection-start="11956" selection-end="11956" vertical-scroll-proportion="0.66292137">
-          <folding>
-            <element signature="e#774#1930#0" expanded="false" />
-            <element signature="e#1957#11912#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

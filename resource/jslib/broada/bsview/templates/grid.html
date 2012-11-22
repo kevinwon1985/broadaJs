@@ -13,10 +13,10 @@
     {{#each record in view.content}}
     <tr>
         {{#if view.isMultiMode}}
-        <th><input type="checkbox"></th>
+        <td><input type="checkbox"></td>
         {{/if}}
-        {{#each view.heads}}
-        <td>{{record}}</td>
+        {{#each col in view.heads}}
+        <td>{{getValueInNestEach record col.mapping}}</td>
         {{/each}}
     </tr>
     {{/each}}
