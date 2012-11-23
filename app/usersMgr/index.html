@@ -127,7 +127,7 @@
                 <div class="btn-toolbar bj-app-toolbar">
                     <div class="navbar-inner">
                         <div class="btn-group">
-                            <button class="btn">
+                            <button class="btn" {{action "clearCompleted" target="controller"}}>
                                 <i class="icon-plus"></i>
                                 新建
                             </button>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
 
-                {{view UserMgr.Grid}}
+                {{view UserMgr.UserGrid}}
             </div>
         </div>
     </div>
