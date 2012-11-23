@@ -8,7 +8,189 @@
   <component name="ChangeListManager">
     <list id="7fff0df2-6e4a-4f33-a42c-bd28749b04c3" name="Default" comment="" />
     <list default="true" id="a1042e8b-d8a6-4214-8048-09e29287d8e0" name="broadaJs-1 整合bootstrap" comment="broadaJs-1 整合bootstrap&#10;封装grid视图组件粗略完成">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/yuicompressor/build/yuicompressor-2.4.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/lessc.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/lessc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/.bin/lessc.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/.bin/lessc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/.bin/yuicompressor.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/.bin/yuicompressor" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/benchmark/benchmark.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/benchmark/less-benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/bin/lessc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/build/amd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/build/ecma-5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/build/header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/build/require-rhino.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/build/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.1.6.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.2.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.2.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.2.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.2.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.2.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.3.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.3.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.3.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-1.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-rhino-1.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-rhino-1.1.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/dist/less-rhino-1.3.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/colors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/cssmin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/lessc_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/rhino.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/alpha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/anonymous.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/assignment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/call.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/color.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/condition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/dimension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/expression.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/import.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/keyword.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/mixin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/operation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/paren.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/quoted.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/ratio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/rule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/ruleset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/url.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/value.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/lib/less/tree/variable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/colors.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/comments.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/css-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/css-escapes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/debug/linenumbers-all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/debug/linenumbers-comments.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/debug/linenumbers-mediaquery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/functions.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/ie-filters.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/import-once.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/import.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/javascript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/lazy-eval.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/media.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-args.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-closure.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-guards.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-important.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-named-args.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-nested.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins-pattern.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/mixins.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/operations.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/parens.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/rulesets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/scope.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/selectors.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/strings.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/variables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/css/whitespace.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/colors.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/comments.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/css-3.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/css-escapes.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/css.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/debug/import/test.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/debug/linenumbers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/comment-in-selector.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/comment-in-selector.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-missing.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-missing.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-no-semi.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-no-semi.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-subfolder1.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-subfolder1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-subfolder2.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/import-subfolder2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/imports/import-subfolder1.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/imports/import-subfolder2.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/imports/subfolder/mixin-not-defined.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/imports/subfolder/parse-error-curly-bracket.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/javascript-error.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/javascript-error.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/mixin-not-defined.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/mixin-not-defined.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/parse-error-curly-bracket.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/parse-error-curly-bracket.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/parse-error-missing-bracket.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/parse-error-missing-bracket.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/property-ie5-hack.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/errors/property-ie5-hack.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/functions.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/ie-filters.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import-once.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/deeper/import-once-test-a.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/import-once-test-c.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/import-test-a.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/import-test-b.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/import-test-c.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/import-test-d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/import/import-test-e.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/javascript.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/lazy-eval.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-args.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-closure.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-guards.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-important.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-named-args.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-nested.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins-pattern.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/operations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/parens.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/rulesets.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/scope.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/selectors.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/strings.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/less/test/less/whitespace.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/yuicompressor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/yuicompressor/nodejs/cli.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/yuicompressor/nodejs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/yuicompressor/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/yuicompressor.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/yuicompressor" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="broadaJs.iws" />
@@ -263,93 +445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broadaJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broadaJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broada" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EmHbHelpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broadaJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broadaJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broada" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bsview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broadaJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broadaJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="broada" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bsview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -711,7 +807,11 @@
       <created>1353664828079</created>
       <updated>1353664828079</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="broadaJs-1 整合bootstrap&#10;封装grid视图组件粗略完成">
+      <created>1353665275830</created>
+      <updated>1353665275830</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers>
       <JIRA shared="false" url="http://rdcserver/jira">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -758,6 +858,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.49414518" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19013524" sideWeight="0.37382075" order="1" side_tool="true" content_ui="tabs" />
@@ -773,7 +874,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278302" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3985849" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
