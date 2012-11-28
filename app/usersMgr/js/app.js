@@ -27,7 +27,7 @@ define(function (require, exports, module) {
                     });
                 }
             }),
-            UserGrid: UserGrid
+            UserGridView: UserGrid
         });
 		return window.UserMgr = App;
 	}

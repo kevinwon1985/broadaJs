@@ -3,7 +3,7 @@
  * @module UsersController
  * @author wangwk
  * @version 2012112301
- * @requires jslib/ember
+ * @requires jslib/ember.rest
  */
 define(function (require, exports, module) {
     require('jslib/ember.rest');
@@ -14,9 +14,6 @@ define(function (require, exports, module) {
         init: function(){
             this._super();
             this.findAll();
-        },
-        clearCompleted: function(){
-            console.log("clearCompleted 3")
         }
     });
 });

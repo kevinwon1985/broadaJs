@@ -13758,7 +13758,7 @@ Ember.View = Ember.CoreView.extend(
     @property collectionView
     @return Ember.CollectionView
   */
-  collectionView: Ember.computed(function() {
+  template: Ember.computed(function() {
     return this.nearestOfType(Ember.CollectionView);
   }),
 

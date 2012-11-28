@@ -127,7 +127,7 @@
                 <div class="btn-toolbar bj-app-toolbar">
                     <div class="navbar-inner">
                         <div class="btn-group">
-                            <button class="btn" {{action "clearCompleted" target="controller"}}>
+                            <button class="btn">
                                 <i class="icon-plus"></i>
                                 新建
                             </button>
@@ -142,12 +142,13 @@
                             </ul>
                         </div>
                         <button class="btn">编辑</button>
-                        <button class="btn">删除</button>
+                        <button class="btn" {{action "deleteUser" target="controller"}}>删除</button>
                         <button class="btn">分配角色</button>
                     </div>
                 </div>
 
-                {{view UserMgr.UserGrid}}
+                {{outlet}}
+                {{view UserMgr.UserGridView}}
             </div>
         </div>
     </div>

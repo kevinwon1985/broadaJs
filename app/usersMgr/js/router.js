@@ -1,8 +1,8 @@
 define('router', ['jslib/ember'],
 	function() {
 		return Ember.Router.extend({
-
-			root: Ember.Route.extend({
+            enableLogging: true,
+            root: Ember.Route.extend({
 
 				showAll: Ember.Route.transitionTo( 'index' ),
 				showActive: Ember.Route.transitionTo( 'active' ),

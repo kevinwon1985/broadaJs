@@ -13,6 +13,7 @@ define(function (require, exports, module) {
 
     return Grid.extend({
         controller: UsersController.create(),
+        classNames: ["bj-app-table"],
         isMultiMode: true,
         heads:[
             {
@@ -51,7 +52,6 @@ define(function (require, exports, module) {
                 title:"状态",
                 mapping: "status"
             }
-        ],
-        contentBinding: 'controller.content'
+        ]
     });
 });

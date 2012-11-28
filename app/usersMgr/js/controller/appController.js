@@ -7,9 +7,12 @@
  */
 define(function (require, exports, module) {
     require('jslib/ember');
+
     return Em.Controller.extend({
-        clearCompleted: function(){
-            console.log("clearCompleted 3")
+        deleteUser: function(e){
+            //todo: 删除功能
+            console.log("deleteUser")
+            console.dir(this)
         }
     });
 });
