@@ -5,16 +5,15 @@
  * @version 2012112001
  * @namespace Ember
  * @requires jslib/broada/bsview/grid
- * @requires controller/usersController
+ * @requires controller/gridController
  */
 define(function (require, exports, module) {
-    var Grid = require('jslib/broada/bsview/grid'),
-        UsersController = require('controller/usersController');
+    var Grid = require('jslib/broada/bsview/grid');
 
     return Grid.extend({
-        controller: UsersController.create(),
         classNames: ["bj-app-table"],
         isMultiMode: true,
+        needsPagination: true,
         heads:[
             {
                 title:"用户名",

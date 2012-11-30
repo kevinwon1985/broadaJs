@@ -127,7 +127,7 @@
                 <div class="btn-toolbar bj-app-toolbar">
                     <div class="navbar-inner">
                         <div class="btn-group">
-                            <button class="btn">
+                            <button class="btn" {{action addUser href=true}}}>
                                 <i class="icon-plus"></i>
                                 新建
                             </button>
@@ -148,7 +148,6 @@
                 </div>
 
                 {{outlet}}
-                {{view UserMgr.UserGridView}}
             </div>
         </div>
     </div>

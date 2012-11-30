@@ -10,10 +10,7 @@
 define(function (require, exports, module) {
     "use strict";
     require('jslib/ember');
-    //require('jslib/bootstrap');
-    //require('jslib/broada/EmHbHelpers/getValueInNestEach');
 
-    //var tpl = require('jslib/text!./templates/grid.html');
 
     /**
      * grid组件
@@ -21,8 +18,17 @@ define(function (require, exports, module) {
      * @param {object} opt 配置对象
      */
     return Em.ContainerView.extend({
-        selectedRows: [],
+        selectedRowsBinding: "controller.selectedRows",
         isMultiMode: false,
+        needsPagination: false,
+
+        init: function(){
+            if(this.needsPagination){
+                this.childViews.push("tfootView");
+            }
+            this._super();
+        },
+        //以下是视图结构
         tagName: "table",
         classNames: ["table","table-bordered","table-hover"],
         childViews: [ 'theadView', 'tbodyView'],
@@ -53,6 +59,8 @@ define(function (require, exports, module) {
             tagName: "tbody",
             itemViewClass: Em.View.extend({
                 tagName: "tr",
+                classNameBindings: ["selected:info"],
+                selected: false,
                 template: function(context, options){
                     var view = options.data.view,
                         heads = view.get("parentView.parentView.heads"),
@@ -61,7 +69,7 @@ define(function (require, exports, module) {
                         buffer = [];
 
                     if( isMultiMode ){
-                        buffer.push('<th><input type="checkbox" data-bsview="gridRowSelector"></th>');
+                        buffer.push('<td><input type="checkbox" data-bsview="gridRowSelector"></td>');
                     }
                     for (var i = 0; i < heads.length; i++) {
                         var colName = heads[i].mapping;
@@ -72,15 +80,31 @@ define(function (require, exports, module) {
                 click: function(e){
                     var $tar = $(e.target);
                     if( $tar.attr("data-bsview") == "gridRowSelector"){
-                        var selectedRows = this.get("parentView.parentView").selectedRows;
+                        var gridView = this.get("parentView.parentView");
+                        var selectedRows = Em.set(gridView, "selectedRows", gridView.selectedRows||[]);
                         if($tar[0].checked){
                             selectedRows.push(this);
+                            this.set("selected",true);
                         }else{
-                            this.get("parentView.parentView").selectedRows = selectedRows.without(this);
+                            Em.set( gridView, "selectedRows", selectedRows.without(this) );
+                            this.set("selected",false);
                         }
                     }
                 }
             })
+        }),
+        tfootView: Em.View.create({
+            tagName: "tfoot",
+            template: function(context, options){
+                var view = options.data.view,
+                    heads = view.get("parentView.heads"),
+                    isMultiMode = view.get("parentView.isMultiMode"),
+                    colsLen = heads.length + (isMultiMode?1:0),
+                    buffer = [];
+                buffer.push('<tr><td colspan="'+colsLen+'">分页</td></tr>')
+
+                return buffer.join("");
+            }
         })
     });
 });

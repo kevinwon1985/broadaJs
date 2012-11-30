@@ -1,55 +1,51 @@
-define('router', ['jslib/ember'],
-	function() {
-		return Ember.Router.extend({
-            enableLogging: true,
-            root: Ember.Route.extend({
+/**
+ * 应用userMgr的入口
+ * @author wangwk
+ * @version 2012112001
+ */
+define(function (require, exports, module) {
+    "use strict";
+    require('jslib/ember');
 
-				showAll: Ember.Route.transitionTo( 'index' ),
-				showActive: Ember.Route.transitionTo( 'active' ),
-				showCompleted: Ember.Route.transitionTo( 'completed' ),
+    return Ember.Router.extend({
+        enableLogging: true,
+        addUser: Ember.Route.transitionTo('root.addUser'),
+        root: Ember.Route.extend({
 
-				index: Ember.Route.extend({
-					route: '/',
-					connectOutlets: function( router ) {
-						/*var controller = router.get( 'applicationController' );
-						var context = controller.namespace.entriesController;
-						context.set( 'filterBy', '' );
+            index: Ember.Route.extend({
+                route: '/',
+                connectOutlets: function( router ) {
+                    var appController = router.get('applicationController'),
+                        gridController = appController.namespace.gridController;
 
-						// This require was left here exclusively for design purposes
-						// Loads decoupled controller/view based on current route
-						require([ 'app/controllers/todos', 'app/views/items' ],
-							function( TodosController, ItemsView ) {
-								controller.connectOutlet({
-									viewClass: ItemsView,
-									controller: TodosController.create(),
-									context: context
-								});
-							}
-						);*/
+                    require([ 'view/userGrid' ],
+                        function ( UserGrid ) {
+                            appController.connectOutlet({
+                                viewClass:UserGrid,
+                                controller:gridController
+                            });
+                        }
+                    );
+                }
+            }),
 
-					}
-				}),
+            addUser: Ember.Route.extend({
+                route: '/addUser',
+                connectOutlets: function( router ) {
+                    var appController = router.get('applicationController'),
+                        gridController = appController.namespace.gridController;
 
-				active: Ember.Route.extend({
-					route: '/active',
-					connectOutlets: function( router ) {
-
-					}
-				}),
-
-				completed: Ember.Route.extend({
-					route: '/completed',
-					connectOutlets: function( router ) {
-					}
-				}),
-
-				specs: Ember.Route.extend({
-					route: '/specs',
-					connectOutlets: function() {
-						//require( [ 'app/specs/helper' ] );
-					}
-				})
-			})
-		});
-	}
-);
+                    require([ 'controller/userController', 'view/userForm' ],
+                        function (userController, userForm) {
+                            appController.connectOutlet({
+                                viewClass:userForm,
+                                controller:userController.create(),
+                                context:gridController
+                            });
+                        }
+                    );
+                }
+            })
+        })
+    });
+});

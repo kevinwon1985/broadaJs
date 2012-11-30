@@ -9,10 +9,12 @@ define(function (require, exports, module) {
     require('jslib/ember');
 
     return Em.Controller.extend({
+        /**
+         * 处理删除按钮点击事件
+         * @event
+         */
         deleteUser: function(e){
-            //todo: 删除功能
-            console.log("deleteUser")
-            console.dir(this)
+            this.namespace.gridController.deleteSelectedUsers();
         }
     });
 });
