@@ -3,10 +3,9 @@
  * @module UsersController
  * @author wangwk
  * @version 2012112301
- * @requires jslib/ember.rest
+ * @requires model/userStore
  */
 define(function (require, exports, module) {
-    require('jslib/ember.rest');
     var UserStore = require('model/userStore');
 
     return Em.ResourceController.extend({

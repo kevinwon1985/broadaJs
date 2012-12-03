@@ -15,6 +15,24 @@ define(function (require, exports, module) {
          */
         deleteUser: function(e){
             this.namespace.gridController.deleteSelectedUsers();
+        },
+        /**
+         * 处理新建按钮点击事件
+         * @event
+         */
+        gotoAddUser: function(e){
+            this.namespace.router.transitionTo('root.users',{userid:"new"});
+        },
+        /**
+         * 处理编辑按钮点击事件
+         * @event
+         */
+        gotoEditUser: function(e){
+            var selectedRows = this.namespace.gridController.selectedRows;
+            if(selectedRows.length > 0){
+                var userResource = selectedRows[0].get( 'content' );
+                this.namespace.router.transitionTo('root.users',{userid: userResource.id});
+            }
         }
     });
 });

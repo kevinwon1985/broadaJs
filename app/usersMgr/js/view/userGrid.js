@@ -3,9 +3,7 @@
  * @module UserGrid
  * @author wangwk
  * @version 2012112001
- * @namespace Ember
  * @requires jslib/broada/bsview/grid
- * @requires controller/gridController
  */
 define(function (require, exports, module) {
     var Grid = require('jslib/broada/bsview/grid');

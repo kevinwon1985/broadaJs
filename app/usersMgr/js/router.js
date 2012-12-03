@@ -9,7 +9,6 @@ define(function (require, exports, module) {
 
     return Ember.Router.extend({
         enableLogging: true,
-        addUser: Ember.Route.transitionTo('root.addUser'),
         root: Ember.Route.extend({
 
             index: Ember.Route.extend({
@@ -29,18 +28,17 @@ define(function (require, exports, module) {
                 }
             }),
 
-            addUser: Ember.Route.extend({
-                route: '/addUser',
-                connectOutlets: function( router ) {
-                    var appController = router.get('applicationController'),
-                        gridController = appController.namespace.gridController;
+            users: Ember.Route.extend({
+                route: '/users/:userid',
+                connectOutlets: function( router, params ) {
+                    var appController = router.get('applicationController');
 
                     require([ 'controller/userController', 'view/userForm' ],
-                        function (userController, userForm) {
+                        function (UserController, userForm) {
                             appController.connectOutlet({
                                 viewClass:userForm,
-                                controller:userController.create(),
-                                context:gridController
+                                controller:UserController.create(),
+                                context:params
                             });
                         }
                     );

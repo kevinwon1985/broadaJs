@@ -127,7 +127,7 @@
                 <div class="btn-toolbar bj-app-toolbar">
                     <div class="navbar-inner">
                         <div class="btn-group">
-                            <button class="btn" {{action addUser href=true}}}>
+                            <button class="btn" {{action "gotoAddUser" target="controller"}}>
                                 <i class="icon-plus"></i>
                                 新建
                             </button>
@@ -135,18 +135,17 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><i class="icon-user"></i> 新建用户</a></li>
+                                <li><a href="#" {{action "gotoAddUser" target="controller"}}><i class="icon-user"></i> 新建用户</a></li>
                                 <li><a href="#"><i class="icon-th-list"></i> 新建组织</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">展示菜单</a></li>
                             </ul>
                         </div>
-                        <button class="btn">编辑</button>
+                        <button class="btn" {{action "gotoEditUser" target="controller"}}>编辑</button>
                         <button class="btn" {{action "deleteUser" target="controller"}}>删除</button>
                         <button class="btn">分配角色</button>
                     </div>
                 </div>
-
                 {{outlet}}
             </div>
         </div>
