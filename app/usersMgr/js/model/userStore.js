@@ -9,7 +9,7 @@ define(function (require, exports, module) {
     require('jslib/ember.rest');
 
     return Ember.Resource.extend({
-        resourceUrl:        'data/grid.json',
+        resourceUrl:        'data/users',
         resourceName:       'users',
         resourceProperties:[
             'id',

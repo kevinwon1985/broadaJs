@@ -31,7 +31,13 @@ define(function (require, exports, module) {
             var selectedRows = this.namespace.gridController.selectedRows;
             if(selectedRows.length > 0){
                 var userResource = selectedRows[0].get( 'content' );
-                this.namespace.router.transitionTo('root.users',{userid: userResource.id});
+                this.namespace.router.transitionTo(
+                    'root.users',
+                    {
+                        userid: userResource.id,
+                        userResource: userResource
+                    }
+                );
             }
         }
     });

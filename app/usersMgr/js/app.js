@@ -11,7 +11,6 @@ define(function (require, exports, module) {
     require('jslib/ember.rest');
 
     var Router = require('router'),
-        UserGrid = require('view/userGrid'),
         AppController = require('controller/appController'),
         GridController = require('controller/gridController');
 
@@ -30,10 +29,7 @@ define(function (require, exports, module) {
                 });
             }
         }),
-        gridController: gridController,
-        UserGridView: UserGrid.extend({
-            controller: gridController
-        })
+        gridController: gridController
     });
     return window.UserMgr = App;
 });
