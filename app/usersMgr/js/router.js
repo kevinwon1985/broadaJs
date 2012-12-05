@@ -35,17 +35,17 @@ define(function (require, exports, module) {
                     var appController = router.get('applicationController');
 
                     require([ 'controller/userController', 'view/userForm' ],
-                        function (UserController, userForm) {
+                        function (UserController, UserForm) {
                             var userController = UserController.create();
                             userController.set("namespace", appController.namespace);
+                            userController.set("isEditing", params.userid != "new");
 
                             if(!params.userResource && params.userid != "new"){
                                 userController.loadFromRemote(params.userid);
                             }
-                            //todo: 列表界面新建或者编辑.然后返回会报错.因为grid视图被标记为destroyed
                             appController.connectOutlet({
                                 outletName: "masterView",
-                                viewClass: userForm,
+                                viewClass: UserForm,
                                 controller: userController,
                                 context: params.userResource
                             });

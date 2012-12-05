@@ -39,6 +39,12 @@ define(function (require, exports, module) {
                     }
                 );
             }
+        },
+        filterByStatus: function(e){
+            console.dir(arguments)
+            this.namespace.gridController.set("filterBy", e.target.innerHTML);
+            console.log(this.namespace.gridController.get("filterBy"));
+            console.dir(this.namespace.gridController.get("entries"));
         }
     });
 });

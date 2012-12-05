@@ -79,8 +79,8 @@
                 <div class="btn-toolbar bj-app-searchbar">
                     <div class="navbar-inner">
                         <div class="btn-group pull-right bj-btngUserStatus" data-toggle="buttons-radio">
-                            <button class="btn bj-btn-success btn-mini">正常</button>
-                            <button class="btn bj-btn-warning btn-mini">过期</button>
+                            <button class="btn bj-btn-success btn-mini" {{action "filterByStatus" target="controller"}}>正常</button>
+                            <button class="btn bj-btn-warning btn-mini" {{action "filterByStatus" target="controller"}}>失效</button>
                         </div>
                         <div id="form_search" class="input-prepend input-append">
                             <input class="span3" type="text" size="16" placeholder="用户名、登录帐号">

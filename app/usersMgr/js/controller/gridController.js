@@ -10,6 +10,22 @@ define(function (require, exports, module) {
 
     return Em.ResourceController.extend({
         selectedRows: [],
+
+        /**
+         * 根据状态过滤
+         * @function
+         */
+        filterBy: "",
+        entries: function(){
+            var filter = this.get( "filterBy" );
+            switch (filter) {
+                case "正常":
+                case "失效":
+                    return this.get("content").filterProperty("status", filter);
+                default:
+                    return this.get( "content" );
+            }
+        }.property( 'filterBy' ),
         /**
          * 删除指定的用户,不会清空已选中行
          * @function
@@ -35,20 +51,6 @@ define(function (require, exports, module) {
         deleteSelectedUsers: function(){
             this.deleteUsers(this.selectedRows);
             this.selectedRows.length = 0;
-        },
-        /**
-         * 根据状态过滤
-         * @function
-         */
-        filterByStatus: function(status){
-            switch (status) {
-                case "正常":
-                    break;
-                case "失败":
-                    break;
-                default:
-                    break;
-            }
         },
         resourceType: UserStore,
         init: function(){

@@ -8,6 +8,8 @@ define(function (require, exports, module) {
     var tpl = require('jslib/text!template/userForm.html');
 
     return Em.View.extend({
+        needsPagination: true,
+        isEditingBinding: "controller.isEditing",
         classNames: ["container-fluid","bj-form-border"],
         template: Em.Handlebars.compile(tpl)
     });

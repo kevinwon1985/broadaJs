@@ -9,6 +9,7 @@ define(function (require, exports, module) {
     var Grid = require('jslib/broada/bsview/grid');
 
     return Grid.extend({
+        contentBinding: "controller.entries",
         classNames: ["bj-app-table"],
         isMultiMode: true,
         needsPagination: true,
