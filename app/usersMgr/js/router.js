@@ -8,21 +8,22 @@ define(function (require, exports, module) {
     require('jslib/ember');
 
     return Ember.Router.extend({
-        //enableLogging: true,
+        enableLogging: true,
         root: Ember.Route.extend({
 
             index: Ember.Route.extend({
                 route: '/',
-                connectOutlets: function( router ) {
-                    var appController = router.get('applicationController'),
-                        gridController = appController.namespace.gridController;
+                connectOutlets: function( router, params ) {
+                    console.dir(arguments)
+                    var appController = router.get('applicationController');
 
-                    require([ 'view/userGrid' ],
-                        function ( UserGrid ) {
+                    require([ 'controller/gridController', 'view/userGrid' ],
+                        function (GridController, UserGrid ) {
+                            var gctrl = appController.namespace.gridController = GridController.create();
                             appController.connectOutlet({
                                 outletName: "masterView",
                                 viewClass:UserGrid,
-                                controller:gridController
+                                controller:gctrl
                             });
                         }
                     );

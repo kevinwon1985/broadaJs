@@ -28,6 +28,9 @@ define(function (require, exports, module) {
                  !this.get('account') ) {
                 return '用户名和帐号是必填的';
             }
+        },
+        isNew: function(){
+            return Ember.empty(this._resourceId());
         }
     });
 });

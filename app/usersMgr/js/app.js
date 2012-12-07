@@ -11,10 +11,7 @@ define(function (require, exports, module) {
     require('jslib/ember.rest');
 
     var Router = require('router'),
-        AppController = require('controller/appController'),
-        GridController = require('controller/gridController');
-
-    var gridController = GridController.create();
+        AppController = require('controller/appController');
 
     var App = Em.Application.create({
         VERSION: '1.0',
@@ -28,8 +25,7 @@ define(function (require, exports, module) {
                     }
                 });
             }
-        }),
-        gridController: gridController
+        })
     });
     return window.UserMgr = App;
 });

@@ -9,11 +9,58 @@ define(function (require, exports, module) {
     require('jslib/ember');
 
     return Em.Controller.extend({
+        queryOpt: {
+            username: null,
+            account: null,
+            telephoneNum: null,
+            mobilePhoneNum: null,
+            email: null,
+            ywdw: null,
+            department: null,
+            position: null,
+            status: null
+        },
+        /**
+         * 初始化查询参数
+         * @private
+         */
+        _initQueryOpt: function(){
+            var opt = this.queryOpt,
+                EmSet = Em.set;
+            for (var prop in opt) {
+                EmSet(opt,prop,null);
+            }
+        },
+        /**
+         * 处理快速查询的查询按钮点击事件
+         * @event
+         */
+        simpleQuery: function(){
+            //todo: 调试此处的问题
+            this.namespace.router.transitionTo('root.index',{queryOpt: this.queryOpt});
+        },
+        /**
+         * 处理更多查询选项面板中查询按钮点击事件
+         * @event
+         */
+        queryUsers: function(){
+
+        },
+        /**
+         * 处理更多查询选项面板中取消按钮点击事件
+         * @event
+         */
+        cancelQuery: function(){
+            this._initQueryOpt();
+        },
         /**
          * 处理删除按钮点击事件
          * @event
          */
         deleteUser: function(e){
+            if(!this.namespace.gridController){
+                return;
+            }
             this.namespace.gridController.deleteSelectedUsers();
         },
         /**
@@ -28,6 +75,9 @@ define(function (require, exports, module) {
          * @event
          */
         gotoEditUser: function(e){
+            if(!this.namespace.gridController){
+                return;
+            }
             var selectedRows = this.namespace.gridController.selectedRows;
             if(selectedRows.length > 0){
                 var userResource = selectedRows[0].get( 'content' );
@@ -41,10 +91,10 @@ define(function (require, exports, module) {
             }
         },
         filterByStatus: function(e){
-            console.dir(arguments)
+            if(!this.namespace.gridController){
+                return;
+            }
             this.namespace.gridController.set("filterBy", e.target.innerHTML);
-            console.log(this.namespace.gridController.get("filterBy"));
-            console.dir(this.namespace.gridController.get("entries"));
         }
     });
 });

@@ -60,7 +60,7 @@ define(function (require, exports, module) {
                 }
                 for (var i = 0; i < heads.length; i++) {
                     var colName = heads[i].mapping;
-                    buffer.push("<td>"+content[colName]+"</td>");
+                    buffer.push("<td>"+(content[colName] || "")+"</td>");
                 }
                 return buffer.join("");
             },
