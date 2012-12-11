@@ -6,7 +6,7 @@
  * @requires model/userStore
  */
 define(function (require, exports, module) {
-    var UserStore = require('model/userStore');
+    var UserStore = require('model/userResource');
 
     return Ember.ObjectController.extend({
         //todo: 完成表单保存功能
@@ -46,7 +46,6 @@ define(function (require, exports, module) {
             return userResource.saveResource()
                 .fail(function(msg){
                     self.set("isSending", false);
-                    alert(msg)
                 })
                 .done(function(){
                     self.set("isSending", false);

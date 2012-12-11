@@ -42,7 +42,7 @@ define(function (require, exports, module) {
     });
 
     var TBodyView = Em.CollectionView.extend({
-        contentBinding: "controller.content",
+        contentBinding: "parentView.content",
         tagName: "tbody",
         itemViewClass: Em.View.extend({
             tagName: "tr",
@@ -81,18 +81,60 @@ define(function (require, exports, module) {
         })
     });
 
-    var TFootView = Em.View.extend({
-        tagName: "tfoot",
+    var PageView = Em.View.extend({
+        contentBinding: "controller.pageInfo",
+        tagName: "div",
+        classNames: ["pagination", "pagination-right"],
         template: function(context, options){
             var view = options.data.view,
-                heads = view.get("parentView.heads"),
-                isMultiMode = view.get("parentView.isMultiMode"),
-                colsLen = heads.length + (isMultiMode?1:0),
+                pageInfo = view.get("content"),
+                len = Math.min(pageInfo.totlepage, 5),
                 buffer = [];
-            buffer.push('<tr><td colspan="'+colsLen+'">分页</td></tr>')
 
+            buffer.push("<ul>");
+            for (var i = 0; i < len; i++) {
+                buffer.push("<li><a href='#'>"+i+"</a></li>");
+            }
+            buffer.push("</ul>");
             return buffer.join("");
         }
+    });
+    //todo: 解决TD coslspan的问题
+    var TFootTdView = Em.ContainerView.extend({
+        tagName: "td",
+        init: function(){
+            this.pageView = PageView.create();
+            this._super();
+        },
+        willDestroyElement: function(){
+            this.pageView = null;
+        },
+        childViews: ["pageView"],
+        pageView: null
+    });
+    var TFootTrView = Em.ContainerView.extend({
+        tagName: "tr",
+        init: function(){
+            this.tFootTdView = TFootTdView.create();
+            this._super();
+        },
+        willDestroyElement: function(){
+            this.tFootTdView = null;
+        },
+        childViews: ["tFootTdView"],
+        tFootTdView: null
+    });
+    var TFootView = Em.ContainerView.extend({
+        tagName: "tfoot",
+        init: function(){
+            this.tFootTrView = TFootTrView.create();
+            this._super();
+        },
+        willDestroyElement: function(){
+            this.tFootTrView = null;
+        },
+        childViews: ["tFootTrView"],
+        tFootTrView: null
     });
 
     /**

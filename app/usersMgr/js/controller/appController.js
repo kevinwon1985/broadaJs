@@ -10,6 +10,7 @@ define(function (require, exports, module) {
 
     return Em.Controller.extend({
         queryOpt: {
+            mix: null,
             username: null,
             account: null,
             telephoneNum: null,
@@ -36,15 +37,14 @@ define(function (require, exports, module) {
          * @event
          */
         simpleQuery: function(){
-            //todo: 调试此处的问题
-            this.namespace.router.transitionTo('root.index',{queryOpt: this.queryOpt});
+            this.namespace.router.transitionTo('root.queryUsers',{queryType:"simpleQuery",queryOpt: this.queryOpt});
         },
         /**
          * 处理更多查询选项面板中查询按钮点击事件
          * @event
          */
         queryUsers: function(){
-
+            this.namespace.router.transitionTo('root.queryUsers',{queryType:"queryUsers",queryOpt: this.queryOpt});
         },
         /**
          * 处理更多查询选项面板中取消按钮点击事件

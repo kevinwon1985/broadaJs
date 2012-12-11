@@ -79,12 +79,13 @@
                 <div class="btn-toolbar bj-app-searchbar">
                     <div class="navbar-inner">
                         <div class="btn-group pull-right bj-btngUserStatus" data-toggle="buttons-radio">
+                            <button class="btn btn-mini active" {{action "filterByStatus" target="controller"}}>全部</button>
                             <button class="btn bj-btn-success btn-mini" {{action "filterByStatus" target="controller"}}>正常</button>
                             <button class="btn bj-btn-warning btn-mini" {{action "filterByStatus" target="controller"}}>失效</button>
                         </div>
                         <form id="form_search" class="input-prepend input-append">
                             {{view Ember.TextField size="16" class="span3"  placeholder="用户名、登录帐号"
-                                    valueBinding="queryOpt.username"}}
+                                    valueBinding="queryOpt.mix"}}
                             <button class="btn" type="button" {{action "simpleQuery" target="controller"}}>
                                 <i class="icon-search"></i>
                             </button>
@@ -160,7 +161,6 @@
                         </div>
                         <button class="btn" {{action "gotoEditUser" target="controller"}}>编辑</button>
                         <button class="btn" {{action "deleteUser" target="controller"}}>删除</button>
-                        <button class="btn">分配角色</button>
                     </div>
                 </div>
                 {{outlet masterView}}

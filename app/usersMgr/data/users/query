@@ -7,42 +7,6 @@
 	},
 	"data": [
 		{
-			"id": "1",
-			"username": "顶级管理员",
-			"account": "admin",
-			"telephoneNum": "",
-			"mobilePhoneNum": "",
-			"email": "",
-			"ywdw": "顶级业务单位",
-			"department": "默认机构",
-			"position": "",
-			"status": "正常"
-		},
-		{
-			"id": "2",
-			"username": "顶级审计员",
-			"account": "auditor",
-			"telephoneNum": "",
-			"mobilePhoneNum": "",
-			"email": "",
-			"ywdw": "顶级业务单位",
-			"department": "默认机构",
-			"position": "",
-			"status": "正常"
-		},
-		{
-			"id": "3",
-			"username": "顶级安全员",
-			"account": "secman",
-			"telephoneNum": "",
-			"mobilePhoneNum": "",
-			"email": "",
-			"ywdw": "顶级业务单位",
-			"department": "默认机构",
-			"position": "",
-			"status": "正常"
-		},
-		{
 			"id": "4",
 			"username": "demo",
 			"account": "demo",
