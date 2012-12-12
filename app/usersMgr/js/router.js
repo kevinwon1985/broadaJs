@@ -12,18 +12,20 @@ define(function (require, exports, module) {
         root: Ember.Route.extend({
             index: Ember.Route.extend({
                 route: '/',
-                connectOutlets: function( router, params ) {
+                connectOutlets: function( router ) {
                     var appController = router.get('applicationController');
 
                     require([ 'controller/gridController', 'view/userGrid' ],
                         function (GridController, UserGrid ) {
                             var gctrl = appController.namespace.gridController = GridController.create();
+
                             gctrl.findAll();
                             appController.connectOutlet({
                                 outletName: "masterView",
                                 viewClass:UserGrid,
                                 controller:gctrl
                             });
+
                         }
                     );
                 }

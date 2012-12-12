@@ -26,6 +26,15 @@ define(function (require, exports, module) {
                 buffer.push("<th>"+heads[i].title+"</th>");
             }
             return buffer.join("");
+        },
+        click: function(e){
+            var $tar = $(e.target);
+            if( $tar.attr("data-bsview") == "gridRowSelector"){
+                var gridView = this.get("parentView.parentView");
+                if($tar[0].checked){
+                }else{
+                }
+            }
         }
     });
     var THeadView = Em.ContainerView.extend({
@@ -80,7 +89,16 @@ define(function (require, exports, module) {
             }
         })
     });
-
+    /**
+     * 分页组件
+     * 需要在grid的controller中设置pageInfo对象,例如下
+     * pageInfo: {
+            "totlepage": 1,
+            "curpage": 1,
+            "pagesize": 20,
+            "totlenum": 0
+        }
+     */
     var PageView = Em.View.extend({
         contentBinding: "controller.pageInfo",
         tagName: "div",
@@ -88,20 +106,52 @@ define(function (require, exports, module) {
         template: function(context, options){
             var view = options.data.view,
                 pageInfo = view.get("content"),
-                len = Math.min(pageInfo.totlepage, 5),
+                totlepage = pageInfo.totlepage,
+                curpage = pageInfo.curpage;
+
+            Ember.assert("grid的controller中必须有pageInfo对象,且pageInfo有totlepage属性和curpage属性", pageInfo && pageInfo.totlepage && pageInfo.curpage);
+
+            var maxPageLen = view.get("parentView.parentView.parentView.parentView.maxPageLen"),
+                len = Math.min(pageInfo.totlepage, maxPageLen),
+                preCls = curpage == 1 ? 'class="disabled"': "",
+                itemCls,
+                nextCls = curpage == totlepage ? 'class="disabled"': "",
                 buffer = [];
 
             buffer.push("<ul>");
-            for (var i = 0; i < len; i++) {
-                buffer.push("<li><a href='#'>"+i+"</a></li>");
+            buffer.push('<li '+preCls+'><a href="#">&laquo;</a></li>');
+            for (var i = 1; i <= len; i++) {
+                itemCls = curpage == i ?  'class="disabled"': "";
+                buffer.push('<li '+itemCls+'><a href="#" data-bsview-pagenum="'+i+'">'+i+'</a></li>');
             }
+            if(pageInfo.totlepage > len){
+                buffer.push('<li class="disabled"><a href="#">...</a></li>');
+            }
+            buffer.push('<li  '+nextCls+'><a href="#">&raquo;</a></li>');
             buffer.push("</ul>");
+
+            //todo: 分页视图不能自动更新
             return buffer.join("");
+        },
+        click: function(e){
+            e.preventDefault();
+            var $tar = $(e.target),
+                pageInfo = this.get("content"),
+                pagenum = $tar.attr("data-bsview-pagenum");
+            if(pagenum && pagenum != pageInfo.curpage){
+                var $li = $tar.parent();
+                this.$("li.active").removeClass();
+                $li.addClass("active");
+                pageInfo.curpage=parseInt(pagenum);
+                //todo: 点击分页后如何像服务端发送请求
+            }
         }
     });
-    //todo: 解决TD coslspan的问题
+
     var TFootTdView = Em.ContainerView.extend({
         tagName: "td",
+        attributeBindings: ["colspan"],
+        colspanBinding: "parentView.parentView.parentView._colspan",
         init: function(){
             this.pageView = PageView.create();
             this._super();
@@ -144,16 +194,32 @@ define(function (require, exports, module) {
      */
     return Em.ContainerView.extend({
         selectedRowsBinding: "controller.selectedRows",
+        /**
+         * 是否可选多行, true则会在第一列前插入多选框
+         * @config
+         */
         isMultiMode: false,
+        /**
+         * 需要分页控制栏, true则会在行最后插入分页控制栏
+         * @config
+         */
         needsPagination: false,
+        /**
+         * 最左显示的页码个数
+         * @config
+         */
+        maxPageLen: 5,
+        _colspan: null,
 
         init: function(){
+            this._colspan = this.heads.length + (this.isMultiMode?1:0);
             this.theadView = THeadView.create();
             this.tbodyView = TBodyView.create();
             if(this.needsPagination){
                 this.tfootView = TFootView.create();
             }
             this._super();
+
         },
         willDestroyElement: function(){
             this.theadView = this.tbodyView = this.tfootView = null;

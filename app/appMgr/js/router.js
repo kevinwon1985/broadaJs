@@ -7,7 +7,6 @@ define('router', ['jslib/ember'],
 	 * @returns Class
 	 */
 	function() {
-        //todo:配置路由
 		return Ember.Router.extend({
 
 			root: Ember.Route.extend({

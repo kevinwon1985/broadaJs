@@ -9,7 +9,6 @@ define(function (require, exports, module) {
     var UserStore = require('model/userResource');
 
     return Ember.ObjectController.extend({
-        //todo: 完成表单保存功能
         isEditing: false,
         isSending: false,
         formTitle: function(){

@@ -13,6 +13,7 @@ define(function (require, exports, module) {
         classNames: ["bj-app-table"],
         isMultiMode: true,
         needsPagination: true,
+        maxPageLen: 10,
         heads:[
             {
                 title:"用户名",

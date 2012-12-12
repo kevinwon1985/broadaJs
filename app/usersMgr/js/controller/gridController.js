@@ -12,12 +12,12 @@ define(function (require, exports, module) {
         queryUrl: "data/users/query",
         selectedRows: [],
 
-        pageInfo: {
+        pageInfo: Em.Object.create({
             "totlepage": 1,
             "curpage": 1,
             "pagesize": 20,
             "totlenum": 0
-        },
+        }),
         /**
          * 根据状态过滤
          * @function
@@ -66,8 +66,21 @@ define(function (require, exports, module) {
          */
         _loadData: function(json){
             this.clearAll();
-            Em.set(this, "pageInfo", json.pageInfo);
+            this.deserializePageInfo(json.pageInfo);
+            //Em.set(this, "pageInfo", json.pageInfo);
+            //this.pageInfo.set("content", json.pageInfo);
             this.loadAll(json.data);
+        },
+        /**
+         * 设置pageInfo
+         * @private
+         */
+        deserializePageInfo: function(json){
+            var pageInfo = this.pageInfo;
+            for(var prop in json) {
+                pageInfo.set(prop, json[prop]);
+            }
+            return this;
         },
         /**
          * 重写了findAll方法.加载列表,并将查询设置为controller的content
