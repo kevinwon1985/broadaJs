@@ -14231,8 +14231,8 @@ Ember.View = Ember.CoreView.extend(
   },
 
   /**
-   @private
-  */
+         @private
+         */
   _insertElement: function (fn) {
     this._scheduledInsert = null;
     this.invokeForState('insertElement', fn);

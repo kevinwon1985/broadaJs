@@ -61,7 +61,7 @@ define(function (require, exports, module) {
             if(!this.namespace.gridController){
                 return;
             }
-            this.namespace.gridController.deleteSelectedUsers();
+            this.namespace.gridController.deleteSelectedRows();
         },
         /**
          * 处理新建按钮点击事件

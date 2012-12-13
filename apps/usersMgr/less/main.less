@@ -1,0 +1,236 @@
+//bootstrap中定义的变量,暂时拷贝过来，以后要跟bootstrap中保持一致
+@btnSuccessBackgroundHighlight: #51a351;
+@btnWarningBackgroundHighlight: #f89406;
+@linkColor: #08c;
+@white: #fff;
+@tableBorder: #ddd;
+
+//自定义的变量
+@contentMt: 30px;
+@subNavPl: 20px;
+
+.testHeight {
+    height: 2000px;
+}
+
+#sidenav {
+    width: 228px;
+    margin: @contentMt 0 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+
+    &.affix {
+        top: 0;
+    }
+
+    #sidenav-search {
+        margin-left: 4px;
+    }
+
+    > ul.nav {
+        >li {
+            border: 1px solid #E5E5E5;
+            margin: 0 0 -1px;
+            &:first-child{
+                border-radius: 6px 6px 0 0;
+            }
+            &:last-child{
+                border-radius: 0 0 6px 6px;
+            }
+            &.active > a{
+                position: relative;
+                z-index: 2;
+                padding: 9px 15px;
+                border: 0;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+                box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+            }
+            > a{
+                margin: 0;
+                padding: 8px 14px;
+            }
+        }
+    }
+
+    .bj-subnav {
+        margin-bottom: 0;
+        margin-left: @subNavPl;
+        > li {
+            &.active > a{
+                color: @white;
+                background-color: lighten(@linkColor, 10%);
+            }
+            > a {
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    li.active > a{
+        [class^="icon-"]{
+            opacity: 1;
+        }
+    }
+    a{
+        [class^="icon-"]{
+            opacity: .25;
+        }
+    }
+}
+
+#appContent{
+    > .bj-app-toolbar {
+        margin-top: @contentMt;
+        > .navbar-inner {
+            > * {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    > .bj-app-searchbar{
+        margin-top: @contentMt;
+        > .navbar-inner {
+            > .bj-btngUserStatus {
+                margin-top: 4px;
+                top: 3px;
+
+                > .bj-btn-success.active {
+                    color: rgba(255,255,255,.75);
+                    background-color: @btnSuccessBackgroundHighlight;
+                    text-shadow: none;
+                }
+                > .bj-btn-warning.active {
+                    color: rgba(255,255,255,.75);
+                    background-color: @btnWarningBackgroundHighlight;
+                    text-shadow: none;
+                }
+            }
+
+            > #form_search{
+                margin: 4px 0 0;
+            }
+
+            > #form_moreOptSearch{
+                margin-bottom: 0;
+                > .row-fluid {
+                    &:first-child{
+                        padding-top: 10px;
+                    }
+                    &:last-child{
+                        padding-bottom: 10px;
+                    }
+                }
+                input {
+                    width: 92%;
+                }
+            }
+        }
+    }
+
+    .bj-app-table {
+        thead > tr > th {
+            background-color: whiteSmoke;
+        }
+        .pagination {
+            margin: 0;
+        }
+    }
+
+    > .bj-form-border {
+        border: 1px solid @tableBorder;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sidenav {
+        width: 258px;
+    }
+
+    #sidenav-search {
+        width: 236px;
+    }
+}
+
+@media (min-width: 980px) {
+    #sidenav {
+        top: 0;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #sidenav {
+        width: 166px;
+        margin-top: 20px;
+    }
+
+    #sidenav-search {
+        width: 144px;
+    }
+}
+
+@media (max-width: 767px) {
+    #sidenav {
+        width: auto;
+        margin-bottom: 20px;
+
+        &.affix {
+            position: static;
+            width: auto;
+            top: 0;
+        }
+    }
+
+    #sidenav-search {
+        width: 97%;
+        margin-left: 0;
+    }
+
+    .bj-app-table {
+        tr > th,
+        tr > td{
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6){
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #sidenav-search {
+        width: 95%;
+        margin-left: 0;
+    }
+    .bj-btngUserStatus {
+        float: none;
+        top: 0;
+    }
+    .bj-app-table {
+        tr > th,
+        tr > td{
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9){
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+/* Style adjustments for high resolution devices */
+}

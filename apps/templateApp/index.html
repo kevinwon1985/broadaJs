@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="zh-cn" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="zh-cn" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="zh-cn" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="zh-cn" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>title </title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../../resource/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap-responsive.css">
+
+    <link rel="stylesheet/less" href="less/main.less">
+    <script src="../../resource/jslib/less.js"></script>
+    <!--<link rel="stylesheet" href="css/main.css">-->
+
+    <script src="../../resource/jslib/modernizr-2.6.2.min.js"></script>
+    <script src="../../resource/jslib/respond.min.js"></script>
+</head>
+<body class="userMgr">
+<script type="text/x-handlebars" data-template-name='application'>
+  //todo:这是一个样板app.在这里写你应用的视图模板
+</script>
+<script src="../../resource/jslib/require.min.js"></script>
+<script>
+    require.config({
+        baseUrl:"js",
+        paths:{
+            jslib:'../../../resource/jslib'
+        },
+        shim:{
+            'jslib/bootstrap':['jslib/jquery'],
+            'jslib/ember':['jslib/jquery', 'jslib/handlebars'],
+            'jslib/ember.rest':['jslib/ember'],
+            'jslib/broada/bsview/bsview':['jslib/ember', 'jslib/bootstrap']
+        }
+    });
+    require(["app"]);
+</script>
+</body>
+</html>

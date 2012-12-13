@@ -1,5 +1,5 @@
 /**
- * grid组件。以bootstrap的table为基础样式
+ * grid组件。以bootstrap的table为基础样式. 需要跟gridController一起使用
  * @module Ember.bsview.grid
  * @author wangwk
  * @version 2012112001
@@ -121,7 +121,7 @@ define(function (require, exports, module) {
             buffer.push("<ul>");
             buffer.push('<li '+preCls+'><a href="#">&laquo;</a></li>');
             for (var i = 1; i <= len; i++) {
-                itemCls = curpage == i ?  'class="disabled"': "";
+                itemCls = curpage == i ?  'class="active"': "";
                 buffer.push('<li '+itemCls+'><a href="#" data-bsview-pagenum="'+i+'">'+i+'</a></li>');
             }
             if(pageInfo.totlepage > len){
@@ -139,9 +139,9 @@ define(function (require, exports, module) {
                 pageInfo = this.get("content"),
                 pagenum = $tar.attr("data-bsview-pagenum");
             if(pagenum && pagenum != pageInfo.curpage){
-                var $li = $tar.parent();
+                /*var $li = $tar.parent();
                 this.$("li.active").removeClass();
-                $li.addClass("active");
+                $li.addClass("active");*/
                 pageInfo.curpage=parseInt(pagenum);
                 //todo: 点击分页后如何像服务端发送请求
             }
