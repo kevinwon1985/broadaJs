@@ -53,15 +53,22 @@ define(function (require, exports, module) {
         cancelQuery: function(){
             this._initQueryOpt();
         },
+        reconfirmDelete: function(){
+            var gridCtrl = this.namespace.gridController;
+            if(gridCtrl && gridCtrl.selectedRows.length != 0){
+                $('#myModal').modal('show');
+            }
+        },
         /**
          * 处理删除按钮点击事件
          * @event
          */
         deleteUser: function(e){
-            if(!this.namespace.gridController){
-                return;
+            var gridCtrl = this.namespace.gridController;
+            if(gridCtrl){
+                gridCtrl.deleteSelectedRows();
+                $('#myModal').modal('hide');
             }
-            this.namespace.gridController.deleteSelectedRows();
         },
         /**
          * 处理新建按钮点击事件
@@ -75,10 +82,11 @@ define(function (require, exports, module) {
          * @event
          */
         gotoEditUser: function(e){
-            if(!this.namespace.gridController){
+            var gridCtrl = this.namespace.gridController;
+            if(!gridCtrl){
                 return;
             }
-            var selectedRows = this.namespace.gridController.selectedRows;
+            var selectedRows = gridCtrl.selectedRows;
             if(selectedRows.length > 0){
                 var userResource = selectedRows[0].get( 'content' );
                 this.namespace.router.transitionTo(

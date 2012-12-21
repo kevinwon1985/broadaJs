@@ -1,5 +1,5 @@
 /**
- * 应用userMgr的入口
+ * 应用 xxx 的入口模块
  * @author wangwk
  * @version 2012112001
  */
@@ -18,14 +18,8 @@ define(function (require, exports, module) {
         Router: Router,
         ApplicationController: AppController,
         ApplicationView: Em.View.extend({
-            didInsertElement: function(){
-                $('#sidenav').affix({
-                    offset:{
-                        top:0
-                    }
-                });
-            }
+            //todo: 你的应用app的一些配置
         })
     });
-    return window.UserMgr = App;
+    return window.YourAppNamespace = App;
 });

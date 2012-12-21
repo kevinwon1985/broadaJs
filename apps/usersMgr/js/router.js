@@ -1,5 +1,5 @@
 /**
- * 应用userMgr的入口
+ * 应用userMgr的路由配置
  * @author wangwk
  * @version 2012112001
  */
@@ -17,9 +17,10 @@ define(function (require, exports, module) {
 
                     require([ 'controller/gridController', 'view/userGrid' ],
                         function (GridController, UserGrid ) {
-                            var gctrl = appController.namespace.gridController = GridController.create();
+                            var gctrl = appController.namespace.gridController
+                                = GridController.create();
 
-                            gctrl.findAll();
+                            //gctrl.findAll();
                             appController.connectOutlet({
                                 outletName: "masterView",
                                 viewClass:UserGrid,
@@ -54,7 +55,6 @@ define(function (require, exports, module) {
                     );
                 }
             }),
-
             queryUsers: Ember.Route.extend({
                 route: '/queryUsers/:queryType/:queryOpt',
                 serialize:  function(router, context){

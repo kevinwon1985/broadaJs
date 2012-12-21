@@ -53,10 +53,19 @@ define(function (require, exports, module) {
     var TBodyView = Em.CollectionView.extend({
         contentBinding: "parentView.content",
         tagName: "tbody",
+        /*init: function(){
+            var itemViewTpl = this.itemViewTpl;
+            this.itemViewClass = Em.View.extend({
+                classNameBindings: ["selected:info"],
+                selected: false,
+                template: itemViewTpl
+            })
+            this._super();
+        }*/
         itemViewClass: Em.View.extend({
-            tagName: "tr",
             classNameBindings: ["selected:info"],
             selected: false,
+            //template: Em.Handlebars.compile(""),
             template: function(context, options){
                 var view = options.data.view,
                     heads = view.get("parentView.parentView.heads"),
@@ -211,15 +220,57 @@ define(function (require, exports, module) {
         maxPageLen: 5,
         _colspan: null,
 
+        _combineTemplate: function(){
+            var headTpl = [],
+                rowTpl = [],
+                footTpl = [],
+                isMulti = this.isMultiMode,
+                heads = this.heads,
+                colspan = heads.length + (isMulti?1:0);
+            if(this.isMultiMode){
+                headTpl.push('<th>{{view Ember.Checkbox}}</th>');
+                //奇怪的问题..这里不用能{{view Ember.Checkbox}}..不然会报错
+                //todo:调试一下.断点: ember.js line 13843, 14820
+                //rowTpl.push('<td>{{view Ember.Checkbox checkedBinding="view.selected"}}</td>');
+                rowTpl.push('<td><input type="checkbox" {{bindAttr checked="view.selected"}}></td>');
+            }
+            for (var i = 0; i < heads.length; i++) {
+                var head = heads[i];
+                headTpl.push("<th>"+head.title+"</th>");
+                rowTpl.push('<td>{{'+(head.mapping||head.title)+'}}</td>');
+            }
+            footTpl.push('<tr><td colspan="'+colspan+'"></td></tr>')
+            return {
+                headTpl: headTpl.join(""),
+                rowTpl: rowTpl.join("")
+            }
+            //todo: 待完成;
+        },
         init: function(){
+            var tpls = this._combineTemplate();
             this._colspan = this.heads.length + (this.isMultiMode?1:0);
-            this.theadView = THeadView.create();
-            this.tbodyView = TBodyView.create();
+            //this.theadView = THeadView.create();
+            this.theadView = Em.View.create({
+                tagName: "thead",
+                template: Em.Handlebars.compile(tpls.headTpl)
+            });
+            this.tbodyView = Em.CollectionView.create({
+                contentBinding: "parentView.content",
+                tagName: "tbody",
+                itemViewClass: Em.View.extend({
+                    classNameBindings: ["selected:info"],
+                    controllerBinding: "content",
+                    selected: false,
+                    template: Em.Handlebars.compile(tpls.rowTpl)
+                })
+            });
+            /*this.tbodyView = TBodyView.create({
+                itemViewTpl : Em.Handlebars.compile(tpls.rowTpl)
+            });*/
             if(this.needsPagination){
                 this.tfootView = TFootView.create();
             }
             this._super();
-
         },
         willDestroyElement: function(){
             this.theadView = this.tbodyView = this.tfootView = null;
