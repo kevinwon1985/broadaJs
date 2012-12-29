@@ -27,6 +27,9 @@
 </head>
 <body class="userMgr">
 <script type="text/x-handlebars" data-template-name='application'>
+    {{#if person}}
+    Welcome back, <b>{{person.firstName}} {{person.lastName}}</b>!
+    {{/if}}
     <div class="container-fluid testHeight">
         <div class="row-fluid">
             <div class="span3">

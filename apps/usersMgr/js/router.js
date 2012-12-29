@@ -20,7 +20,7 @@ define(function (require, exports, module) {
                             var gctrl = appController.namespace.gridController
                                 = GridController.create();
 
-                            //gctrl.findAll();
+                            gctrl.findAll();
                             appController.connectOutlet({
                                 outletName: "masterView",
                                 viewClass:UserGrid,

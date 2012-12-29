@@ -18,6 +18,10 @@ define(function (require, exports, module) {
         Router: Router,
         ApplicationController: AppController,
         ApplicationView: Em.View.extend({
+            person: Ember.Object.create({
+                firstName: "Joy",
+                lastName: "Clojure"
+            }),
             didInsertElement: function(){
                 $('#sidenav').affix({
                     offset:{
