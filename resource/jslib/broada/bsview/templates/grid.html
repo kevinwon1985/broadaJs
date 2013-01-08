@@ -1,24 +1,41 @@
 <table class="table table-bordered table-hover">
     <thead>
-    <tr>
+    {{#view view.TheadView}}
         {{#if view.isMultiMode}}
-        <th><input type="checkbox"></th>
+        <th>{{view Ember.Checkbox}}</th>
         {{/if}}
         {{#each view.heads}}
         <th>{{title}}</th>
         {{/each}}
-    </tr>
+    {{/view}}
     </thead>
     <tbody>
     {{#each record in view.content}}
-    <tr>
+    {{#view view.RowView controllerBinding="record"}}
         {{#if view.isMultiMode}}
-        <td><input type="checkbox"></td>
+        <td>{{view Ember.Checkbox checkedBinding="view.selected"}}</td>
         {{/if}}
         {{#each col in view.heads}}
-        <td>{{getValueInNestEach record col.mapping}}</td>
+        <td>{{getValueInNestEach controller col.mapping}}</td>
         {{/each}}
-    </tr>
+    {{/view}}
     {{/each}}
     </tbody>
+    {{#if view.needsPagination}}
+    <tfoot>
+      <tr>
+        <td {{bindAttr colspan="view.colsLen"}}>
+            <div class="pagination pagination-right">
+                {{#view view.PageView}}
+                    <li><a href="#" data-bsview-pagenum="1">&laquo;</a></li>
+                    {{#each page in view.pageNums}}
+                    <li {{bindAttr class="page.isActive:active"}}><a href="#" data-bsview-pagenum="{{unbound page.pageNum}}">{{page.text}}</a></li>
+                    {{/each}}
+                    <li><a href="#" data-bsview-pagenum="{{unbound lastPage}}">&raquo;</a></li>
+                {{/view}}
+            </div>
+        </td>
+      </tr>
+    </tfoot>
+    {{/if}}
 </table>

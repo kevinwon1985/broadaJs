@@ -26,8 +26,7 @@ define(function (require, exports, module) {
      * @param rootpath {String}
      * @param path {String}
      */
-    var normalizePath = Ember.Handlebars.normalizePath,
-        HandlebarsGet = Ember.Handlebars.get;
+    var HandlebarsGet = Ember.Handlebars.get;
     Ember.Handlebars.registerHelper('getValueInNestEach', function(rootpath, path, options) {
         Ember.assert("参数错误，调用格式：{{getValueInNestEach targetObject col.mapping}}",
             arguments.length == 3);

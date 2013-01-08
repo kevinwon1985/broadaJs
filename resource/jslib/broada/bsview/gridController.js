@@ -9,14 +9,53 @@ define(function (require, exports, module) {
 
     return Em.ResourceController.extend({
         queryUrl: "/",
-        selectedRows: [],
+        maxPageLen: 7,
+        selectedRows: function(){
+            return this.filterProperty('_selected', true);
+        }.property("content", "content.@each._selected"),
 
         pageInfo: Em.Object.create({
-            "totlepage": 1,
-            "curpage": 1,
-            "pagesize": 20,
-            "totlenum": 0
+            totlepage: 1,
+            curpage: 1,
+            pagesize: 20,
+            totlenum: 0
         }),
+        /**
+         * 根据分页信息生成具体页码数据
+         * @private
+         */
+        pageNums: function(){
+            var pageNums = [],
+                pageInfo = this.get("pageInfo"),
+                maxPageLen = this.get("maxPageLen"),
+                totlepage = pageInfo.totlepage,
+                curpage = pageInfo.curpage;
+
+            var startNum = curpage - parseInt(maxPageLen/2, 10);
+            startNum = startNum <= 0 ? 1 : startNum;
+
+            var len = startNum + maxPageLen > totlepage ?
+                totlepage + 1 : maxPageLen+startNum;
+            if(startNum > 1){
+                pageNums.push({
+                    text: "..."
+                });
+            }
+            for (var i = startNum; i < len; i++) {
+                pageNums.push( {
+                    pageNum: i,
+                    isActive: i == curpage,
+                    text: i
+                } );
+            }
+            if(len < totlepage ){
+                pageNums.push({
+                    text: "..."
+                });
+            }
+            return pageNums;
+        }.property("pageInfo.curpage", "maxPageLen"),
+        lastPageBinding: "pageInfo.totlepage",
         /**
          * 加载分页信息以及列表数据
          * @private

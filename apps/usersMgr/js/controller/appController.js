@@ -55,7 +55,7 @@ define(function (require, exports, module) {
         },
         reconfirmDelete: function(){
             var gridCtrl = this.namespace.gridController;
-            if(gridCtrl && gridCtrl.selectedRows.length != 0){
+            if(gridCtrl && gridCtrl.get("selectedRows").length != 0){
                 $('#myModal').modal('show');
             }
         },
@@ -86,7 +86,7 @@ define(function (require, exports, module) {
             if(!gridCtrl){
                 return;
             }
-            var selectedRows = gridCtrl.selectedRows;
+            var selectedRows = gridCtrl.get("selectedRows");
             if(selectedRows.length > 0){
                 var userResource = selectedRows[0].get( 'content' );
                 this.namespace.router.transitionTo(
