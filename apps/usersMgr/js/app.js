@@ -7,7 +7,6 @@ define(function (require, exports, module) {
     "use strict";
     require('jslib/handlebars');
     require('jslib/ember');
-    require('jslib/bootstrap');
     require('jslib/ember.rest');
 
     var Router = require('router'),
@@ -18,10 +17,6 @@ define(function (require, exports, module) {
         Router: Router,
         ApplicationController: AppController,
         ApplicationView: Em.View.extend({
-            person: Ember.Object.create({
-                firstName: "Joy",
-                lastName: "Clojure"
-            }),
             didInsertElement: function(){
                 $('#sidenav').affix({
                     offset:{

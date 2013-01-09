@@ -9,6 +9,9 @@
 @contentMt: 30px;
 @subNavPl: 20px;
 
+body{
+    font-size: 62.5%;
+}
 .testHeight {
     height: 2000px;
 }
@@ -83,68 +86,57 @@
 #appContent{
     > .bj-app-toolbar {
         margin-top: @contentMt;
-        > .navbar-inner {
-            > * {
-                margin-top: 4px;
-            }
-        }
+        padding: 5px;
     }
 
     > .bj-app-searchbar{
         margin-top: @contentMt;
-        > .navbar-inner {
-            > .bj-btngUserStatus {
-                margin-top: 4px;
-                top: 3px;
+        padding: 5px;
 
-                > .bj-btn-success.active {
-                    color: rgba(255,255,255,.75);
-                    background-color: @btnSuccessBackgroundHighlight;
-                    text-shadow: none;
+        .ui-buttonset .ui-button {
+            margin-right: -0.4em; //fix a jquery UI bug
+        }
+
+        > .bj-btngUserStatus {
+            float: right;
+            top: 3px;
+        }
+
+        > #form_search{
+            margin: 0;
+            INPUT[type="text"]{
+                min-height: 28px;
+            }
+        }
+
+        > #form_moreOptSearch{
+            margin-bottom: 0;
+            > .row-fluid {
+                &:first-child{
+                    padding-top: 10px;
                 }
-                > .bj-btn-warning.active {
-                    color: rgba(255,255,255,.75);
-                    background-color: @btnWarningBackgroundHighlight;
-                    text-shadow: none;
+                &:last-child{
+                    padding-bottom: 10px;
                 }
             }
-
-            > #form_search{
-                margin: 4px 0 0;
-            }
-
-            > #form_moreOptSearch{
-                margin-bottom: 0;
-                > .row-fluid {
-                    &:first-child{
-                        padding-top: 10px;
-                    }
-                    &:last-child{
-                        padding-bottom: 10px;
-                    }
-                }
-                input {
-                    width: 92%;
-                }
+            input {
+                width: 92%;
             }
         }
     }
 
     .bj-app-table {
-        thead > tr > th {
-            background-color: whiteSmoke;
+        margin-top: @contentMt;
+        width: 100%;
+        th, td{
+            text-align: left;
+            padding: 4px;
         }
         .pagination {
             margin: 0;
         }
     }
-
-    > .bj-form-border {
-        border: 1px solid @tableBorder;
-        border-radius: 4px;
-    }
 }
-
 
 .lt-ie9{
     #form_search{
