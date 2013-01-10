@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../../resource/css/bootstrap.css">
     <link rel="stylesheet" href="../../resource/css/bootstrap.responsive.css">
     <link rel="stylesheet" href="../../resource/css/jquery-ui-1.9.2.custom.css">
+    <link rel="stylesheet" href="../../resource/themes/cupertino/jquery.ui.theme.css">
 
     <link rel="stylesheet/less" href="less/main.less">
     <script src="../../resource/jslib/less.js"></script>
@@ -26,26 +27,28 @@
     <script src="../../resource/jslib/modernizr-2.6.2.min.js"></script>
     <script src="../../resource/jslib/respond.min.js"></script>
     <script src="../../resource/jslib/jquery.js"></script>
+    <script src="../../resource/jslib/bootstrap.js"></script>
     <script src="../../resource/jslib/jquery-ui-1.9.2.custom.js"></script>
 </head>
 <body class="userMgr">
     <div class="container-fluid testHeight">
         <div class="row-fluid">
             <div class="span3">
-                <div id="sidenav" class="bj-app-sidenav">
+                <div id="sidenav">
                     <form>
                         <legend>组织结构</legend>
-                        <input id="sidenav-search" type="text" placeholder="输入拼音首字母搜索">
+                        <input id="sidenav-search" type="text"
+                               placeholder="输入拼音首字母搜索">
                     </form>
-                    <ul class="nav nav-pills nav-stacked">
+                    <ul class="bj-nav">
                         <li class="active">
-                            <a href="#" data-toggle="collapse" data-target="#subNav1">
+                            <a href="#" class="ui-state-default">
                                 <i class="icon-chevron-down"></i> 科室A</a>
-                            <ul id="subNav1" class="nav nav-pills nav-stacked collapse in bj-subnav">
+                            <ul id="subNav1" class="bj-subnav">
                                 <li class="active">
-                                    <a href="#" data-toggle="collapse" data-target="#subsubNav1"><i class="icon-chevron-down"></i> 子科室a</a>
-                                    <ul id="subsubNav1" class="nav nav-pills nav-stacked collapse in bj-subnav">
-                                        <li class="active"><a href="#"><i class="icon-minus"></i> 子子科室a</a></li>
+                                    <a href="#" class="ui-state-default"></i> 子科室a</a>
+                                    <ul id="subsubNav1" class="collapse bj-subnav">
+                                        <li class="active"><a href="#"  class="ui-state-default"><i class="icon-minus"></i> 子子科室a</a></li>
                                         <li><a href="#"><i class="icon-chevron-right"></i> 子子科室b</a></li>
                                         <li><a href="#"><i class="icon-minus"></i> 子y子科室c</a></li>
                                     </ul>
@@ -57,7 +60,7 @@
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#subNav2">
                                 <i class="icon-chevron-right"></i> 科室B</a>
-                            <ul id="subNav2" class="nav nav-pills nav-stacked collapse bj-subnav">
+                            <ul id="subNav2" class="collapse ui-helper-hidden bj-subnav">
                                 <li><a href="#"><i class="icon-minus"></i> 子科室a</a></li>
                                 <li class="active"><a href="#"><i class="icon-minus"></i> 子科室b</a></li>
                                 <li><a href="#"><i class="icon-minus"></i> 子科室c</a></li>
@@ -82,12 +85,13 @@
                         <input type="radio" id="radio2" name="radio" /><label for="radio2">正常</label>
                         <input type="radio" id="radio3" name="radio" /><label for="radio3">失效</label>
                     </div>
-                    <form id="form_search" class="input-prepend input-append">
+                    <form id="form_search">
                         <input type="text" size="16" class="span3"  placeholder="用户名、登录帐号">
                         <button class="btn">查询</button>
-                        <button class="btn">更多查询条件</button>
+                        <button class="btn" data-toggle="collapse"
+                                data-target="#form_moreOptSearch">更多查询条件</button>
                     </form>
-                    <form id="form_moreOptSearch" class="row-fluid hidden">
+                    <form id="form_moreOptSearch" class="row-fluid ui-helper-hidden">
                         <div class="row-fluid">
                             <label class="span2">登录帐号</label>
                             <div class="span4">
@@ -352,6 +356,22 @@
                         event.preventDefault();
                     });
             $(".ui-buttonset").buttonset();
+
+            $('body').on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
+                var $this = $(this), href
+                        , target = $this.attr('data-target')
+                                || e.preventDefault()
+                                || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') //strip for ie7
+                        , option = $(target).data('collapse') ? 'toggle' : $this.data()
+                $this[$(target).hasClass('ui-helper-hidden') ? 'addClass' : 'removeClass']('ui-helper-hidden')
+                $(target).toggle("blind")
+            });
+
+            $('#sidenav').affix({
+                offset:{
+                    top:0
+                }
+            });
         });
     </script>
 </body>

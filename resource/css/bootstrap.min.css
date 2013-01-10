@@ -252,3 +252,4 @@ table td[class*="span"],table th[class*="span"],.row-fluid table td[class*="span
 .pager .next>a,.pager .next>span{float:right;}
 .pager .previous>a,.pager .previous>span{float:left;}
 .pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>span{color:#999999;background-color:#fff;cursor:default;}
+.affix {position: fixed;}

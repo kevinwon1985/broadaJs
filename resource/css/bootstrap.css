@@ -1326,3 +1326,6 @@ table th[class*="span"],
   background-color: #fff;
   cursor: default;
 }
+.affix {
+    position: fixed;
+}

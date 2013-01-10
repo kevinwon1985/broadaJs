@@ -20,37 +20,59 @@ body{
     width: 228px;
     margin: @contentMt 0 0;
     padding: 0;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
 
+    ul{
+        list-style-type: none;
+        margin-left: 0;
+    }
     &.affix {
         top: 0;
     }
 
+    form{
+        margin: 0 0 20px;
+        > legend {
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: 40px;
+            color: #333;
+            border: 0;
+            border-bottom: 1px solid #E5E5E5;
+        }
+    }
     #sidenav-search {
+        display: inline-block;
+        height: 20px;
+        padding: 3px 6px;
+        margin-bottom: 9px;
         margin-left: 4px;
+        line-height: 20px;
     }
 
-    > ul.nav {
+    > ul.bj-nav {
+        :first-child{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        :last-child{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
         >li {
             border: 1px solid #E5E5E5;
             margin: 0 0 -1px;
-            &:first-child{
-                border-radius: 6px 6px 0 0;
-            }
-            &:last-child{
-                border-radius: 0 0 6px 6px;
-            }
             &.active > a{
                 position: relative;
                 z-index: 2;
-                padding: 9px 15px;
+                padding: 7px 15px;
                 border: 0;
-                text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
-                box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+                border-radius: 5px;
             }
             > a{
+                display: block;
                 margin: 0;
                 padding: 8px 14px;
             }
@@ -61,12 +83,11 @@ body{
         margin-bottom: 0;
         margin-left: @subNavPl;
         > li {
-            &.active > a{
-                color: @white;
-                background-color: lighten(@linkColor, 10%);
-            }
             > a {
-                padding: 6px 12px;
+                display: block;
+                border: 0;
+                padding: 4px 12px;
+                margin: 2px 0 3px 0;
             }
         }
     }
@@ -131,6 +152,8 @@ body{
         th, td{
             text-align: left;
             padding: 4px;
+            border: 1px solid #EEE;
+            border-width: 1px 0;
         }
         .pagination {
             margin: 0;
