@@ -113,8 +113,7 @@ define(function (require, exports, module) {
          */
         deleteRow: function(rows){
             var ctlr = this;
-            rows.forEach(function(row, i, users){
-                var record = row.get( 'content' );
+            rows.forEach(function(record, i, rows){
                 ctlr.removeObject( record );
                 record.destroyResource();
             });

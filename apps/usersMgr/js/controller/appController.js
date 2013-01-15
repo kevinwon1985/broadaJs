@@ -88,7 +88,7 @@ define(function (require, exports, module) {
             }
             var selectedRows = gridCtrl.get("selectedRows");
             if(selectedRows.length > 0){
-                var userResource = selectedRows[0].get( 'content' );
+                var userResource = selectedRows[0];
                 this.namespace.router.transitionTo(
                     'root.users',
                     {
@@ -102,7 +102,7 @@ define(function (require, exports, module) {
             if(!this.namespace.gridController){
                 return;
             }
-            this.namespace.gridController.set("filterBy", e.target.innerHTML);
+            this.namespace.gridController.set("filterBy", e.target.value);
         }
     });
 });

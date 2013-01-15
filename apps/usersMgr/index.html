@@ -16,7 +16,9 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="../../resource/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap.responsive.css">
     <link rel="stylesheet" href="../../resource/css/jquery-ui-1.9.2.custom.css">
+    <link rel="stylesheet" href="../../resource/themes/cupertino/jquery.ui.theme.css">
 
     <link rel="stylesheet/less" href="less/main.less">
     <script src="../../resource/jslib/less.js"></script>
@@ -30,22 +32,21 @@
     <div class="container-fluid testHeight">
         <div class="row-fluid">
             <div class="span3">
-                <div id="sidenav" class="bj-app-sidenav">
+                <div id="sidenav">
                     <form>
                         <legend>组织结构</legend>
-                        <input id="sidenav-search" type="text" placeholder="输入拼音首字母搜索"
-                               data-provide="typeahead"
-                               data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]">
+                        <input id="sidenav-search" type="text"
+                               placeholder="输入拼音首字母搜索">
                     </form>
-                    <ul class="nav nav-pills nav-stacked">
+                    <ul class="bj-nav">
                         <li class="active">
-                            <a href="#" data-toggle="collapse" data-target="#subNav1">
+                            <a href="#" class="ui-state-default">
                                 <i class="icon-chevron-down"></i> 科室A</a>
-                            <ul id="subNav1" class="nav nav-pills nav-stacked collapse in bj-subnav">
+                            <ul id="subNav1" class="bj-subnav">
                                 <li class="active">
-                                    <a href="#" data-toggle="collapse" data-target="#subsubNav1"><i class="icon-chevron-down"></i> 子科室a</a>
-                                    <ul id="subsubNav1" class="nav nav-pills nav-stacked collapse in bj-subnav">
-                                        <li class="active"><a href="#"><i class="icon-minus"></i> 子子科室a</a></li>
+                                    <a href="#" class="ui-state-default"></i> 子科室a</a>
+                                    <ul id="subsubNav1" class="collapse bj-subnav">
+                                        <li class="active"><a href="#"  class="ui-state-default"><i class="icon-minus"></i> 子子科室a</a></li>
                                         <li><a href="#"><i class="icon-chevron-right"></i> 子子科室b</a></li>
                                         <li><a href="#"><i class="icon-minus"></i> 子y子科室c</a></li>
                                     </ul>
@@ -57,7 +58,7 @@
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#subNav2">
                                 <i class="icon-chevron-right"></i> 科室B</a>
-                            <ul id="subNav2" class="nav nav-pills nav-stacked collapse bj-subnav">
+                            <ul id="subNav2" class="collapse ui-helper-hidden bj-subnav">
                                 <li><a href="#"><i class="icon-minus"></i> 子科室a</a></li>
                                 <li class="active"><a href="#"><i class="icon-minus"></i> 子科室b</a></li>
                                 <li><a href="#"><i class="icon-minus"></i> 子科室c</a></li>
@@ -76,95 +77,83 @@
                 </div>
             </div>
             <div id="appContent" class="span9">
-                <div class="btn-toolbar bj-app-searchbar">
-                    <div class="navbar-inner">
-                        <div class="btn-group pull-right bj-btngUserStatus" data-toggle="buttons-radio">
-                            <button class="btn btn-mini active" {{action "filterByStatus" target="controller"}}>全部</button>
-                            <button class="btn bj-btn-success btn-mini" {{action "filterByStatus" target="controller"}}>正常</button>
-                            <button class="btn bj-btn-warning btn-mini" {{action "filterByStatus" target="controller"}}>失效</button>
-                        </div>
-                        <form id="form_search" class="input-prepend input-append">
-                            {{view Ember.TextField size="16" class="span3"  placeholder="用户名、登录帐号"
-                                    valueBinding="queryOpt.mix"}}
-                            <button class="btn" type="button" {{action "simpleQuery" target="controller"}}>
-                                <i class="icon-search"></i>
-                            </button>
-                            <button class="btn" type="button"
-                                    data-toggle="collapse" data-target="#form_moreOptSearch">
-                                更多查询条件</button>
-                        </form>
-                        <form id="form_moreOptSearch" class="row-fluid collapse">
-                            <div class="row-fluid">
-                                <label class="span2">登录帐号</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.account"}}
-                                </div>
-                                <label class="span2">电子邮箱</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.email"}}
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <label class="span2">用户名</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.username"}}
-                                </div>
-                                <label class="span2">联系电话</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.telephoneNum"}}
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <label class="span2">职位</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.position"}}
-                                </div>
-                                <label class="span2">部门</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.department"}}
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <label class="span2">状态</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.status"}}
-                                </div>
-                                <label class="span2">移动电话</label>
-                                <div class="span4">
-                                    {{view Ember.TextField size="16" valueBinding="queryOpt.mobilePhoneNum"}}
-                                </div>
-                            </div>
-                            <div class="row-fluid">
-                                <button class="btn btn-primary" {{action "queryUsers" target="controller"}}>查询</button>
-                                <a class="btn" data-toggle="collapse"
-                                   data-target="#form_moreOptSearch" {{action "cancelQuery" target="controller"}}>取消</a>
-                            </div>
-                        </form>
+                <div class="ui-widget-header ui-corner-all bj-app-searchbar">
+                    <div class="ui-buttonset bj-btngUserStatus" data-toggle="buttons-radio">
+                        <input type="radio" id="radio1" name="radio" value="全部" checked="checked"  {{action "filterByStatus" target="controller"}}/><label for="radio1">全部</label>
+                        <input type="radio" id="radio2" name="radio" value="正常" {{action "filterByStatus" target="controller"}}/><label for="radio2">正常</label>
+                        <input type="radio" id="radio3" name="radio" value="失效" {{action "filterByStatus" target="controller"}}/><label for="radio3">失效</label>
                     </div>
-                </div>
-                <div class="btn-toolbar bj-app-toolbar">
-                    <div class="navbar-inner">
-                        <div class="btn-group">
-                            <button class="btn" {{action "gotoAddUser" target="controller"}}>
-                                <i class="icon-plus"></i>
-                                新建
-                            </button>
-                            <button class="btn dropdown-toggle" data-toggle="dropdown">
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" {{action "gotoAddUser" target="controller"}}><i class="icon-user"></i> 新建用户</a></li>
-                                <li><a href="#"><i class="icon-th-list"></i> 新建组织</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">展示菜单</a></li>
-                            </ul>
-                        </div>
-                        <button class="btn" {{action "gotoEditUser" target="controller"}}>编辑</button>
+                    <form id="form_search">
+                        {{view Ember.TextField size="16" class="span3"  placeholder="用户名、登录帐号"
+                                valueBinding="queryOpt.mix"}}
+                        <button class="btn" {{action "simpleQuery" target="controller"}}>查询</button>
                         <button class="btn"
-                        {{action "reconfirmDelete" target="controller"}}>删除</button>
-                    </div>
+                                data-toggle="collapse" data-target="#form_moreOptSearch">
+                            更多查询条件</button>
+                    </form>
+                    <form id="form_moreOptSearch" class="row-fluid ui-helper-hidden">
+                        <div class="row-fluid">
+                            <label class="span2">登录帐号</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.account"}}
+                            </div>
+                            <label class="span2">电子邮箱</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.email"}}
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span2">用户名</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.username"}}
+                            </div>
+                            <label class="span2">联系电话</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.telephoneNum"}}
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span2">职位</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.position"}}
+                            </div>
+                            <label class="span2">部门</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.department"}}
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span2">状态</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.status"}}
+                            </div>
+                            <label class="span2">移动电话</label>
+                            <div class="span4">
+                                {{view Ember.TextField size="16" valueBinding="queryOpt.mobilePhoneNum"}}
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <button class="btn" {{action "queryUsers" target="controller"}}>查询</button>
+                            <a class="btn" data-toggle="collapse"
+                               data-target="#form_moreOptSearch" {{action "cancelQuery" target="controller"}}>取消</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="modal hide" id="myModal">
+                <div class="ui-widget-header ui-corner-all bj-app-toolbar">
+                    <button class="btn" {{action "gotoAddUser" target="controller"}}>
+                        新建
+                    </button>
+                    <ul class="dropdown-menu ui-helper-hidden">
+                        <li><a href="#" {{action "gotoAddUser" target="controller"}}><i class="icon-user"></i> 新建用户</a></li>
+                        <li><a href="#"><i class="icon-th-list"></i> 新建组织</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">展示菜单</a></li>
+                    </ul>
+                    <button class="btn" {{action "gotoEditUser" target="controller"}}>编辑</button>
+                    <button class="btn"
+                    {{action "reconfirmDelete" target="controller"}}>删除</button>
+                </div>
+                <div class="modal ui-helper-hidden" id="myModal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 id="myModalLabel">警告</h3>
@@ -191,9 +180,9 @@
         },
         shim:{
             'jslib/bootstrap':['jslib/jquery'],
+            'jslib/jqueryui':['jslib/jquery'],
             'jslib/ember':['jslib/jquery', 'jslib/handlebars'],
-            'jslib/ember.rest':['jslib/ember'],
-            'jslib/broada/bsview/bsview':['jslib/ember', 'jslib/bootstrap']
+            'jslib/ember.rest':['jslib/ember']
         }
     });
     require(["app"]);

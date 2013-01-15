@@ -11,6 +11,13 @@ define(function (require, exports, module) {
         needsPagination: true,
         isEditingBinding: "controller.isEditing",
         classNames: ["container-fluid","bj-form-border"],
-        template: Em.Handlebars.compile(tpl)
+        template: Em.Handlebars.compile(tpl),
+        didInsertElement: function(){
+            this.$( "button.btn, a.btn" )
+                .button()
+                .click(function( event ) {
+                    event.preventDefault();
+                });
+        }
     });
 });
