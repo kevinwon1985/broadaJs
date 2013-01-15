@@ -88,7 +88,7 @@ define(function (require, exports, module) {
             }
             var selectedRows = gridCtrl.get("selectedRows");
             if(selectedRows.length > 0){
-                var userResource = selectedRows[0].get( 'content' );
+                var userResource = selectedRows[0];
                 this.namespace.router.transitionTo(
                     'root.users',
                     {

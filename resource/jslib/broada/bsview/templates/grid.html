@@ -2,10 +2,10 @@
     <thead>
     {{#view view.TheadView}}
         {{#if view.isMultiMode}}
-        <th>{{view Ember.Checkbox}}</th>
+        <th class="col-cb">{{view Ember.Checkbox}}</th>
         {{/if}}
         {{#each view.heads}}
-        <th>{{title}}</th>
+        <th {{bindAttr class="mapping"}}>{{title}}</th>
         {{/each}}
     {{/view}}
     </thead>
@@ -13,10 +13,10 @@
     {{#each record in view.content}}
     {{#view view.RowView controllerBinding="record"}}
         {{#if view.isMultiMode}}
-        <td>{{view Ember.Checkbox checkedBinding="view.selected"}}</td>
+        <td class="col-cb">{{view Ember.Checkbox checkedBinding="view.selected"}}</td>
         {{/if}}
         {{#each col in view.heads}}
-        <td>{{getValueInNestEach controller col.mapping}}</td>
+        <td {{bindAttr class="col.mapping"}}>{{getValueInNestEach controller col.mapping}}</td>
         {{/each}}
     {{/view}}
     {{/each}}

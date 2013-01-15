@@ -63,8 +63,6 @@ define(function (require, exports, module) {
         _loadData: function(json){
             this.clearAll();
             this.deserializePageInfo(json.pageInfo);
-            //Em.set(this, "pageInfo", json.pageInfo);
-            //this.pageInfo.set("content", json.pageInfo);
             this.loadAll(json.data);
         },
         /**
@@ -113,8 +111,7 @@ define(function (require, exports, module) {
          */
         deleteRow: function(rows){
             var ctlr = this;
-            rows.forEach(function(row, i, users){
-                var record = row.get( 'content' );
+            rows.forEach(function(record, i, rows){
                 ctlr.removeObject( record );
                 record.destroyResource();
             });
@@ -124,8 +121,7 @@ define(function (require, exports, module) {
          * @function
          */
         deleteSelectedRows: function(){
-            this.deleteRow(this.selectedRows);
-            this.selectedRows.length = 0;
+            this.deleteRow( this.get("selectedRows") );
         }
     });
 });
