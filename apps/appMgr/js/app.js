@@ -1,36 +1,34 @@
-define(
-	[
-		'router',
-		'jslib/jquery'
-	],
-	function(Router) {
-        var $window = $(window),
-            $contentFrame = $('#_contentFrame_'),
-            headerHeight = $('#header').height();
+/**
+ * 应用入口
+ * @module AppMgr
+ * @author wangwk
+ * @version 2013010501
+ */
+define(function (require, exports, module) {
+    "use strict";
 
-		var app = Em.Application.create();
-        /**
-         * 调整主内容iframe的高度
-         * @method
-         * @param {int} h 高度
-         */
-        app.adjustContentFrameHeight = function(h) {
-            if ($contentFrame.length>0){
-                $contentFrame.height(h);
-            }
-        };
+	var Router = require('router'),
+        AppView = require('view/appView'),
+        AppController = require('controller/appController');
+	
 
-        app.ready = function(){
-            app.adjustContentFrameHeight( $window.height()-headerHeight-5 );
-            $(window).resize(function(){
-                app.adjustContentFrameHeight( $window.height()-headerHeight-5 );
-            });
-        };
+    var App = Em.Application.create({
+        VERSION: '1.0',
+        Router: Router,
+        ApplicationController: AppController,
+        ApplicationView: AppView
+    });
+	/**
+	 * 调整主内容iframe的高度
+	 * @method
+	 * @param {int} h 高度
+	 */
+	App.adjustContentFrameHeight = function(h) {
+		var $contentFrame = $('#_contentFrame_');
+		if ($contentFrame.length>0){
+			$contentFrame.height(h);
+		}
+	};
 
-
-        if(window){
-            window.appMgr = app;
-        }
-		return app;
-	}
-);
+    return window.AppMgr = App;
+});

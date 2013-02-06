@@ -9,10 +9,6 @@
 @contentMt: 30px;
 @subNavPl: 20px;
 
-.testHeight {
-    height: 2000px;
-}
-
 #sidenav {
     width: 228px;
     margin: @contentMt 0 0;
@@ -84,8 +80,10 @@
     > .bj-app-toolbar {
         margin-top: @contentMt;
         > .navbar-inner {
-            > * {
+            > .btn-group,
+            >.btn {
                 margin-top: 4px;
+                margin-right: 10px;
             }
         }
     }

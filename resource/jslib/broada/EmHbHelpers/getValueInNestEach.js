@@ -5,7 +5,7 @@
  */
 define(function (require, exports, module) {
     "use strict";
-    require('jslib/ember');
+    require('../../3rdPart/ember');
     /**
      * 用于在模板的嵌套each中，把一个each中的属性值当另外一个each的属性名来获取值。
      * 例如：

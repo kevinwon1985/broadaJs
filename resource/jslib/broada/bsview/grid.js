@@ -9,9 +9,9 @@
  */
 define(function (require, exports, module) {
     "use strict";
-    require('jslib/ember');
-    require('jslib/broada/EmHbHelpers/getValueInNestEach');
-    var tpl = require('jslib/text!./templates/grid.html');
+    require('../../3rdPart/ember');
+    require('../EmHbHelpers/getValueInNestEach');
+    var tpl = require('jslib/3rdPart/text!./templates/grid.html');
 
     /**
      * grid组件

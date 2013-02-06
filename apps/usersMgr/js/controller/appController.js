@@ -6,8 +6,6 @@
  * @requires jslib/ember
  */
 define(function (require, exports, module) {
-    require('jslib/ember');
-
     return Em.Controller.extend({
         queryOpt: {
             mix: null,

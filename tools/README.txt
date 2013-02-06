@@ -1,10 +1,12 @@
+﻿这些命令需要装nodejs
+
 LESS
 
 命令：less xx.less > xx.css
 
-YUICOMPRESSOR
+uglifyjs
 
-命令：yuicompressor -o xx.min.js xx.js
+命令：uglifyjs xx.js -o xx.min.js
 
 r.js
 

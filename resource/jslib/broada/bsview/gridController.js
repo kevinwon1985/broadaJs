@@ -5,7 +5,7 @@
  * @version 2012121301
  */
 define(function (require, exports, module) {
-    require('jslib/ember.rest');
+	require('../../3rdPart/ember.rest');
 
     return Em.ResourceController.extend({
         queryUrl: "/",

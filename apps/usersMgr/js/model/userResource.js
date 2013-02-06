@@ -6,8 +6,6 @@
  * @requires jslib/ember.rest
  */
 define(function (require, exports, module) {
-    require('jslib/ember.rest');
-
     return Ember.Resource.extend({
         resourceUrl:        'data/users',
         resourceName:       'users',

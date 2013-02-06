@@ -1,44 +1,30 @@
-define('router', ['jslib/ember'],
-	/**
-	 * Todos Router
-	 *
-	 * Defined routes represent filters according to specs
-	 *
-	 * @returns Class
-	 */
-	function() {
-		return Ember.Router.extend({
+/**
+ * 路由器
+ * @module Router
+ * @author wangwk
+ * @version 2013010501
+ */
 
-			root: Ember.Route.extend({
+define(function(require, exports, module) {
+    "use strict";
 
-				showAll: Ember.Route.transitionTo( 'index' ),
-				showActive: Ember.Route.transitionTo( 'active' ),
-				showCompleted: Ember.Route.transitionTo( 'completed' ),
+    return Em.Router.extend({
+        root: Em.Route.extend({
+            index: Em.Route.extend({
+                route: '/',
+                connectOutlets: function(router) {
+                    var appController = router.get('applicationController');
+                    console.dir(appController)
+                }
+            }),
 
-				index: Ember.Route.extend({
-					route: '/',
-					connectOutlets: function( router ) {
-					}
-				}),
-
-				active: Ember.Route.extend({
-					route: '/active',
-					connectOutlets: function( router ) {
-					}
-				}),
-
-				completed: Ember.Route.extend({
-					route: '/completed',
-					connectOutlets: function( router ) {
-					}
-				}),
-
-				specs: Ember.Route.extend({
-					route: '/specs',
-					connectOutlets: function() {
-					}
-				})
-			})
-		});
-	}
-);
+            app: Em.Route.extend({
+                route: '/app/:appname',
+                connectOutlets: function(router, params) {
+                    var appController = router.get('applicationController');
+                    appController.startApp(params.appname);
+                }
+            })
+        })
+    });
+});

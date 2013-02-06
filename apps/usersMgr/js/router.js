@@ -5,7 +5,6 @@
  */
 define(function (require, exports, module) {
     "use strict";
-    require('jslib/ember');
 
     return Ember.Router.extend({
         enableLogging: true,

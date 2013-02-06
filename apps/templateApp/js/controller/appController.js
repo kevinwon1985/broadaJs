@@ -6,7 +6,10 @@
  * @requires jslib/ember
  */
 define(function (require, exports, module) {
-    require('jslib/ember');
-    //todo: 你的应用视图控制器
-    return Em.Controller.extend();
+    return Em.Controller.extend({
+		title: "点击我",
+		clickme: function(e){
+			this.set("title", "这是一个样板应用");
+		}
+    });
 });

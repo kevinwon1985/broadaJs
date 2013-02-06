@@ -5,7 +5,7 @@
  * @version 2012120301
  */
 define(function (require, exports, module) {
-    var tpl = require('jslib/text!template/userForm.html');
+    var tpl = require('jslib/3rdPart/text!template/userForm.html');
 
     return Em.View.extend({
         needsPagination: true,
