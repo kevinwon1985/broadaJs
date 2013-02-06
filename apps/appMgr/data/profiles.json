@@ -1,0 +1,18 @@
+{
+	"username" : "顶级管理员",
+	"appgroup" : [
+		{
+			"name": "运维服务",
+			"children": [
+				{
+					"name": "用户管理",
+					"appid": "usersMgr"
+				},
+				{
+					"name": "样板应用",
+					"appid": "templateApp"
+				}
+			]
+		}
+	]
+}

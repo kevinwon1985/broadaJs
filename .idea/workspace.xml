@@ -8,101 +8,116 @@
   <component name="ChangeListManager">
     <list id="7fff0df2-6e4a-4f33-a42c-bd28749b04c3" name="Default" comment="" />
     <list default="true" id="a1042e8b-d8a6-4214-8048-09e29287d8e0" name="broadaJs-1 整合bootstrap" comment="broadaJs-1 整合bootstrap&#10;公用模块整合进broada,结构调整">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/appMgr/js/controller/appController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/appMgr/js/model/profiles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/appMgr/js/template/app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/appMgr/js/view/appView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/appMgr/requireDefaultConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/templateApp/requireDefaultConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/usersMgr/js/template/app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/usersMgr/js/view/appView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/usersMgr/requireDefaultConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/css/broada.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/ember.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/ember.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/ember.rest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/ember.rest.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/handlebars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/handlebars.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/i18n.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/json2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/json2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/less.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/less.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/modernizr-2.6.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/require.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/respond.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/text.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/3rdPart/text.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/broada.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/jslib/requireDefaultConfig.js" />
-      <change type="DELETED" beforePath="G:\broadaJs\apps\appMgr\data\grid.json" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\apps\appMgr\data\login.json" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\apps\appMgr\data\tree.json" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\apps\usersMgr\css\main.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\broada\bsview\bsview.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\ember.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\ember.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\ember.rest.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\ember.rest.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\handlebars.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\handlebars.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\json2.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\json2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\less.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\less.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\modernizr-2.6.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\require.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\require.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\respond.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\resource\jslib\text.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\.bin\yuicompressor" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\.bin\yuicompressor.cmd" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\yuicompressor\README.md" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\yuicompressor\build\yuicompressor-2.4.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\yuicompressor\nodejs\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\yuicompressor\nodejs\index.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\node_modules\yuicompressor\package.json" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\yuicompressor" afterPath="" />
-      <change type="DELETED" beforePath="G:\broadaJs\tools\yuicompressor.cmd" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/appMgr/data/profiles.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/templateApp/js/template/app.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/templateApp/js/view/appView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/.bin/uglifyjs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/bin/uglifyjs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/ast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/compress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/mozilla-ast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/output.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/scope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/sourcemap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/transform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/bool.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/boolean_double.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/boolean_single.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/default_hash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/default_singles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/divide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/line_count.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/line_count_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/line_count_wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/nonopt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/reflect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/short.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/string.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/usage-options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/example/xup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/example/center.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/example/meat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/test/break.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/test/idleness.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/test/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/test/_.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/test/_/argv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/test/_/bin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/test/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/test/usage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/optimist/x.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/Makefile.dryice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/assert-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/mini-require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/prefix-source-map.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/prefix-utils.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/suffix-source-map.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/suffix-utils.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/test-prefix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/build/test-suffix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/array-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/base64-vlq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/binary-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/lib/source-map/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/run-tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-base64-vlq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-binary-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-dog-fooding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/node_modules/source-map/test/source-map/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/blocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/conditionals.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/dead-code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/debugger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/drop-unused.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/issue-12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/issue-22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/issue-44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/issue-59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/labels.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/loops.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/sequences.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/compress/switch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/test/run-tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/node_modules/uglify-js/tools/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/uglifyjs.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/uglifyjs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/appMgr/index.html" afterPath="$PROJECT_DIR$/apps/appMgr/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/appMgr/js/app.js" afterPath="$PROJECT_DIR$/apps/appMgr/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/appMgr/js/router.js" afterPath="$PROJECT_DIR$/apps/appMgr/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/templateApp/index.html" afterPath="$PROJECT_DIR$/apps/templateApp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/templateApp/js/app.js" afterPath="$PROJECT_DIR$/apps/templateApp/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/templateApp/js/controller/appController.js" afterPath="$PROJECT_DIR$/apps/templateApp/js/controller/appController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/templateApp/js/router.js" afterPath="$PROJECT_DIR$/apps/templateApp/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/templateApp/less/main.less" afterPath="$PROJECT_DIR$/apps/templateApp/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/templateApp/requirejsBuildConfig.js" afterPath="$PROJECT_DIR$/apps/templateApp/requirejsBuildConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/index.html" afterPath="$PROJECT_DIR$/apps/usersMgr/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/js/app.js" afterPath="$PROJECT_DIR$/apps/usersMgr/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/js/controller/appController.js" afterPath="$PROJECT_DIR$/apps/usersMgr/js/controller/appController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/js/model/userResource.js" afterPath="$PROJECT_DIR$/apps/usersMgr/js/model/userResource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/js/router.js" afterPath="$PROJECT_DIR$/apps/usersMgr/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/js/view/userForm.js" afterPath="$PROJECT_DIR$/apps/usersMgr/js/view/userForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/less/main.less" afterPath="$PROJECT_DIR$/apps/usersMgr/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/usersMgr/requirejsBuildConfig.js" afterPath="$PROJECT_DIR$/apps/usersMgr/requirejsBuildConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/resource/css/bootstrap-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/resource/css/bootstrap-responsive.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/css/bootstrap.css" afterPath="$PROJECT_DIR$/resource/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/resource/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/EmHbHelpers/getValueInNestEach.js" afterPath="$PROJECT_DIR$/resource/jslib/broada/EmHbHelpers/getValueInNestEach.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/jslib/broada/bsview/gridController.js" afterPath="$PROJECT_DIR$/resource/jslib/broada/bsview/gridController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/README.txt" afterPath="$PROJECT_DIR$/tools/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/r.js" afterPath="$PROJECT_DIR$/tools/r.js" />
     </list>
     <ignored path="broadaJs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,7 +136,17 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="appView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/view/appView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="3" selection-start="129" selection-end="134" vertical-scroll-proportion="0.16423358">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -322,6 +347,10 @@
               <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usersMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -337,7 +366,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templateApp" />
+              <option name="myItemId" value="usersMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usersMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usersMgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadaJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,14 +516,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="120" />
     <property name="options.splitter.main.proportions" value="0.29833335" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="108" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="108" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="E:/WebstormProjects/twitterBootstrap" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="122" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="895" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="889" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="895" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="116" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="114" />
@@ -687,7 +786,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.49414518" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19013524" sideWeight="0.32665095" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26491648" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26491648" sideWeight="0.6709906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3962264" sideWeight="0.49675325" order="4" side_tool="false" content_ui="tabs" x="24" y="326" width="1232" height="341" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26461038" sideWeight="0.3266979" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5003903" order="8" side_tool="true" content_ui="tabs" />
@@ -800,13 +899,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/view/appView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="129" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/controller/appController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="44" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
@@ -824,18 +916,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/jslib/broada.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="30594" selection-start="230931" selection-end="230932" vertical-scroll-proportion="0.11990111">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="76" column="30594" selection-start="230931" selection-end="230932" vertical-scroll-proportion="0.11990111" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/model/userResource.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="103" selection-end="103" vertical-scroll-proportion="0.16423358">
-          <folding />
-        </state>
+        <state line="5" column="29" selection-start="103" selection-end="103" vertical-scroll-proportion="0.16423358" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/view/userGrid.js">
@@ -843,9 +929,11 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/template/application.html">
+    <entry file="file://$PROJECT_DIR$/apps/usersMgr/js/view/appView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="5" column="3" selection-start="129" selection-end="134" vertical-scroll-proportion="0.16423358">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
