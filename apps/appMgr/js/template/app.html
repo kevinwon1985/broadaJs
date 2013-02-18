@@ -35,7 +35,7 @@
         {{#each group in appgroup}}
         <ul style="text-align: center; visibility: visible; ">
             {{#each app in group.children}}
-            <li>
+            <li id="submenu_{{unbound app.appid}}">
                 <a href="#/app/{{unbound app.appid}}/">{{app.name}}</a>
             </li>
             {{/each}}
@@ -43,5 +43,8 @@
         {{/each}}
     </div>
 </div>
-
+{{#if appUrl}}
 <iframe id="_contentFrame_" frameborder="0" {{bindAttr src="appUrl"}}></iframe>
+{{else}}
+<h1>Welcome!</h1>
+{{/if}}

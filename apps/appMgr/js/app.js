@@ -18,17 +18,6 @@ define(function (require, exports, module) {
         ApplicationController: AppController,
         ApplicationView: AppView
     });
-	/**
-	 * 调整主内容iframe的高度
-	 * @method
-	 * @param {int} h 高度
-	 */
-	App.adjustContentFrameHeight = function(h) {
-		var $contentFrame = $('#_contentFrame_');
-		if ($contentFrame.length>0){
-			$contentFrame.height(h);
-		}
-	};
 
     return window.AppMgr = App;
 });

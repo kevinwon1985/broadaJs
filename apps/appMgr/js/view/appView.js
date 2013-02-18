@@ -10,14 +10,28 @@ define(function (require, exports, module) {
     return Em.View.extend({
         template: Em.Handlebars.compile(tpl),
 		didInsertElement: function(e){
-			var App = this.controller.namespace,
-				$window = $(window),
-				headerHeight = $('#header').height();
+			var view = this,
+                ctrl = this.controller,
+				$win = $(window),
+				headerHeight = $('#header').height()+5;
 
-            App.adjustContentFrameHeight( $window.height()-headerHeight-5 );
-            $(window).resize(function(){
-                App.adjustContentFrameHeight( $window.height()-headerHeight-5 );
+            ctrl._setActiveSubmenu();
+
+            this._adjustContentFrameHeight( $win.height()-headerHeight );
+            $win.resize(function(){
+                view._adjustContentFrameHeight( $win.height()-headerHeight );
             });
-		}
+		},
+        /**
+         * 调整主内容iframe的高度
+         * @method
+         * @param {int} h 高度
+         */
+        _adjustContentFrameHeight: function(h) {
+            var $contentFrame = $('#_contentFrame_');
+            if ($contentFrame.length>0){
+                $contentFrame.height(h);
+            }
+        }
     });
 });

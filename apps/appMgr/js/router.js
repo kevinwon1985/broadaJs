@@ -14,7 +14,6 @@ define(function(require, exports, module) {
                 route: '/',
                 connectOutlets: function(router) {
                     var appController = router.get('applicationController');
-                    console.dir(appController)
                 }
             }),
 
